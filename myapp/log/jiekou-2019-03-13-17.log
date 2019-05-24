@@ -1,0 +1,3 @@
+[2019-03-13 17:53:59.517512] INFO: jiekou: 当前模块 解析测试用例文件
+[2019-03-13 17:53:59.517878] INFO: jiekou: 全部args参数参数信息 , ('/Users/gzuser/PycharmProjects/DemoTest1/myapp/test_case_data/dubbocase.xlsx',)
+[2019-03-13 17:53:59.517984] INFO: jiekou: 全部kwargs参数信息 , {}

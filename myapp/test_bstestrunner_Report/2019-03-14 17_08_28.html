@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>Test Report</title>
+    <meta name="generator" content="BSTestRunner 0.8.4"/>
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
+    
+<style type="text/css" media="screen">
+
+/* -- css div popup ------------------------------------------------------------------------ */
+.popup_window {
+    display: none;
+    position: relative;
+    left: 0px;
+    top: 0px;
+    /*border: solid #627173 1px; */
+    padding: 10px;
+    background-color: #99CCFF;
+    font-family: "Lucida Console", "Courier New", Courier, monospace;
+    text-align: left;
+    font-size: 10pt;
+    width: 1200px;
+}
+
+/* -- report ------------------------------------------------------------------------ */
+
+#show_detail_line .label {
+    font-size: 85%;
+    cursor: pointer;
+}
+
+#show_detail_line {
+    margin: 2em auto 1em auto;
+}
+
+#total_row  { font-weight: bold; }
+.hiddenRow  { display: none; }
+.testcase   { margin-left: 2em; }
+
+</style>
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+<body>
+<script language="javascript" type="text/javascript"><!--
+output_list = Array();
+
+/* level - 0:Summary; 1:Failed; 2:All */
+function showCase(level) {
+    trs = document.getElementsByTagName("tr");
+    for (var i = 0; i < trs.length; i++) {
+        tr = trs[i];
+        id = tr.id;
+        if (id.substr(0,2) == 'ft') {
+            if (level < 1) {
+                tr.className = 'hiddenRow';
+            }
+            else {
+                tr.className = '';
+            }
+        }
+        if (id.substr(0,2) == 'pt') {
+            if (level > 1) {
+                tr.className = '';
+            }
+            else {
+                tr.className = 'hiddenRow';
+            }
+        }
+    }
+}
+
+
+function showClassDetail(cid, count) {
+    var id_list = Array(count);
+    var toHide = 1;
+    for (var i = 0; i < count; i++) {
+        tid0 = 't' + cid.substr(1) + '.' + (i+1);
+        tid = 'f' + tid0;
+        tr = document.getElementById(tid);
+        if (!tr) {
+            tid = 'p' + tid0;
+            tr = document.getElementById(tid);
+        }
+        id_list[i] = tid;
+        if (tr.className) {
+            toHide = 0;
+        }
+    }
+    for (var i = 0; i < count; i++) {
+        tid = id_list[i];
+        if (toHide) {
+            document.getElementById('div_'+tid).style.display = 'none'
+            document.getElementById(tid).className = 'hiddenRow';
+        }
+        else {
+            document.getElementById(tid).className = '';
+        }
+    }
+}
+
+
+function showTestDetail(div_id){
+    var details_div = document.getElementById(div_id)
+    var displayState = details_div.style.display
+    // alert(displayState)
+    if (displayState != 'block' ) {
+        displayState = 'block'
+        details_div.style.display = 'block'
+    }
+    else {
+        details_div.style.display = 'none'
+    }
+}
+
+
+function html_escape(s) {
+    s = s.replace(/&/g,'&amp;');
+    s = s.replace(/</g,'&lt;');
+    s = s.replace(/>/g,'&gt;');
+    return s;
+}
+
+/* obsoleted by detail in <div>
+function showOutput(id, name) {
+    var w = window.open("", //url
+                    name,
+                    "resizable,scrollbars,status,width=800,height=450");
+    d = w.document;
+    d.write("<pre>");
+    d.write(html_escape(output_list[id]));
+    d.write("\n");
+    d.write("<a href='javascript:window.close()'>close</a>\n");
+    d.write("</pre>\n");
+    d.close();
+}
+*/
+--></script>
+
+<div class="container">
+    <div class='heading'>
+<h1>Test Report</h1>
+<p><strong>Start Time:</strong> 2019-03-14 17:08:28</p>
+<p><strong>Duration:</strong> 0:00:00.302771</p>
+<p><strong>Status:</strong> <span class="text text-success">Pass <strong>1</strong></span></p>
+
+<p class='description'>Test case result</p>
+</div>
+
+
+    
+<p id='show_detail_line'>
+<span class="label label-primary" onclick="showCase(0)">Summary</span>
+<span class="label label-danger" onclick="showCase(1)">Failed</span>
+<span class="label label-default" onclick="showCase(2)">All</span>
+</p>
+<table id='result_table' class="table">
+    <thead>
+        <tr id='header_row'>
+            <th>Test Group/Test case</td>
+            <th>Count</td>
+            <th>Pass</td>
+            <th>Fail</td>
+            <th>Error</td>
+            <th>View</td>
+        </tr>
+    </thead>
+    <tbody>
+        
+<tr class='text text-success'>
+    <td>case.case</td>
+    <td>1</td>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+    <td><a class="btn btn-xs btn-primary"href="javascript:showClassDetail('c1',1)">Detail</a></td>
+</tr>
+
+<tr id='pt1.1' class='hiddenRow'>
+    <td class='text text-success'><div class='testcase'>testinterface</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link btn btn-xs btn-default" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.1')" >
+        pass</a>
+
+    <div id='div_pt1.1' class="popup_window">
+        <div style='text-align: right;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.1').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt1.1: [2019-03-14 17:08:28.346668] INFO: API: inputdata&gt; headers:{'AMSESSION': 'ukdata5', 'Region': 'uk', 'Content-Type': 'application/json;charset=UTF-8'}, 参数:, url:/mobile/v1/customer/userprofile ,返回:{'code': 0, 'result': {'code': '0', 'message': 'success', 'data': {'lastLoginTime': 1533882667, 'id': '5', 'userName': 'Jones'}}},预期:code=0
+[2019-03-14 17:08:28.346896] INFO: API: 当前模块 断言测试结果
+[2019-03-14 17:08:28.347036] INFO: API: 全部args参数参数信息 , ()
+[2019-03-14 17:08:28.347162] INFO: API: 全部kwargs参数信息 , {'asserqiwang': 'code=0', 'fanhuijson': {'code': 0, 'result': {'code': '0', 'message': 'success', 'data': {'lastLoginTime': 1533882667, 'id': '5', 'userName': 'Jones'}}}}
+expected value: &lt;class 'list'&gt;
+actualed value: &lt;class 'list'&gt;
+expected value: ['0']
+actualed value: ['0']
+actualed value3: ['0']
+result: True
+0
+[2019-03-14 17:08:28.429388] INFO: API: inputdata&gt; headers:{'AMSESSION': 'AMSESSION_5_UK', 'LtpaToken2': 'LtpaToken2_5_UK', 'Content-Type': 'application/json;charset=UTF-8'}, 参数:, url:/mobile/v1/customer/5/overview?currency=GBP ,返回:{'code': 0, 'result': {'code': '0', 'message': 'success', 'data': {'customer': {'name': 'Jones', 'amount': 48676057496.91, 'currency': 'GBP', 'bookingCenter': 'UK Accounts', 'updateDate': '', 'liabilitiesAmount': -48086438537.35, 'liabilitiesCurrency': 'GBP', 'netAssetsAmount': -9136046525.35, 'netAssetsCurrency': 'GBP'}, 'ytd': {'amount': 850920120.0, 'currency': 'GBP'}, 'hasLiabilities': True, 'newDocumentCount': 10}}},预期:code=0
+[2019-03-14 17:08:28.429605] INFO: API: 当前模块 断言测试结果
+[2019-03-14 17:08:28.429746] INFO: API: 全部args参数参数信息 , ()
+[2019-03-14 17:08:28.429888] INFO: API: 全部kwargs参数信息 , {'asserqiwang': 'code=0', 'fanhuijson': {'code': 0, 'result': {'code': '0', 'message': 'success', 'data': {'customer': {'name': 'Jones', 'amount': 48676057496.91, 'currency': 'GBP', 'bookingCenter': 'UK Accounts', 'updateDate': '', 'liabilitiesAmount': -48086438537.35, 'liabilitiesCurrency': 'GBP', 'netAssetsAmount': -9136046525.35, 'netAssetsCurrency': 'GBP'}, 'ytd': {'amount': 850920120.0, 'currency': 'GBP'}, 'hasLiabilities': True, 'newDocumentCount': 10}}}}
+expected value: &lt;class 'list'&gt;
+actualed value: &lt;class 'list'&gt;
+expected value: ['0']
+actualed value: ['0']
+actualed value3: ['0']
+result: True
+0
+[2019-03-14 17:08:28.489870] INFO: API: inputdata&gt; headers:{'AMSESSION': 'AMSESSION_5_UK', 'LtpaToken2': 'LtpaToken2_5_UK', 'Content-Type': 'application/json;charset=UTF-8'}, 参数:{"docType":"All","accountIds":[],"categories":[]}, url:/mobile/v1/customer/5/documents ,返回:{'code': 0, 'result': {'code': '0', 'message': 'success', 'data': {'documentsGroup': [{'date': '12 October 2018', 'dates': '2018-10-12T15:45:54.727+08:00', 'documents': [{'isRead': True, 'isFlag': False, 'accountId': '1', 'accountName': 'Mr &amp; Mrs Jones', 'category': 'Advice - Cash', 'id': '1', 'name': 'New Test Executed(#Deale28786-03)', 'size': '1.5mb', 'url': ''}]}, {'date': '11 October 2018', 'dates': '2018-10-11T15:45:54.727+08:00', 'documents': [{'isRead': False, 'isFlag': False, 'accountId': '2', 'accountName': "Jones' Family Trust", 'category': 'Communication', 'id': '2', 'name': 'Fader Forward Advice(#ADV17785-36)', 'size': '1.3mb', 'url': ''}, {'isRead': False, 'isFlag': False, 'accountId': '1', 'accountName': 'Mr &amp; Mrs Jones', 'category': 'Statement - Holdings', 'id': '3', 'name': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed ombr, Lorem ipsum dolor sit amet.', 'size': '0.1mb', 'url': ''}, {'isRead': True, 'isFlag': False, 'accountId': '1', 'accountName': 'Mr &amp; Mrs Jones', 'category': 'Statement - Cash', 'id': '4', 'name': 'New Order Executed(#Deal19486-03)', 'size': '2.4mb', 'url': ''}]}, {'date': '10 October 2018', 'dates': '2018-10-10T15:45:54.727+08:00', 'documents': [{'isRead': True, 'isFlag': False, 'accountId': '3', 'accountName': 'Mr Tom Jones', 'category': 'Statement - Transactions', 'id': '5', 'name': 'New Test Executed(#Deal14376-03)', 'size': '0.6mb', 'url': ''}]}, {'date': '8 October 2018', 'dates': '2018-10-10T15:45:54.727+08:00', 'documents': [{'isRead': False, 'isFlag': False, 'accountId': '3', 'accountName': 'Mr Tom Jones', 'category': 'Advice - Holdings', 'id': '6', 'name': 'New Test Executed(#Deal14376-04)', 'size': '0.6mb', 'url': ''}]}, {'date': '7 October 2018', 'dates': '2018-10-10T15:45:54.727+08:00', 'documents': [{'isRead': True, 'isFlag': False, 'accountId': '3', 'accountName': 'Mr Tom Jones', 'category': 'Advice - Fees', 'id': '7', 'name': 'New Test Executed(#Deal14376-05)', 'size': '0.6mb', 'url': ''}]}, {'date': '6 October 2018', 'dates': '2018-10-10T15:45:54.727+08:00', 'documents': [{'isRead': False, 'isFlag': False, 'accountId': '2', 'accountName': "Jones' Family Trust", 'category': 'Communication', 'id': '8', 'name': 'New Test Executed(#Deal14376-06)', 'size': '0.6mb', 'url': ''}]}, {'date': '5 October 2018', 'dates': '2018-10-10T15:45:54.727+08:00', 'documents': [{'isRead': True, 'isFlag': False, 'accountId': '3', 'accountName': 'Mr Tom Jones', 'category': 'Advice - Fees', 'id': '9', 'name': 'New Test Executed(#Deal14376-07)', 'size': '0.6mb', 'url': ''}]}, {'date': '4 October 2018', 'dates': '2018-10-10T15:45:54.727+08:00', 'documents': [{'isRead': True, 'isFlag': False, 'accountId': '3', 'accountName': 'Mr Tom Jones', 'category': 'Communication', 'id': '10', 'name': 'New Test Executed(#Deal14376-08)', 'size': '0.6mb', 'url': ''}]}, {'date': '3 October 2018', 'dates': '2018-10-10T15:45:54.727+08:00', 'documents': [{'isRead': False, 'isFlag': False, 'accountId': '3', 'accountName': 'Mr Tom Jones', 'category': 'Advice - Cash', 'id': '11', 'name': 'New Test Executed(#Deal14376-09)', 'size': '0.6mb', 'url': ''}]}, {'date': '2 October 2018', 'dates': '2018-10-10T15:45:54.727+08:00', 'documents': [{'isRead': True, 'isFlag': False, 'accountId': '3', 'accountName': 'Mr Tom Jones', 'category': 'Communication', 'id': '12', 'name': 'New Test Executed(#Deal14376-10)', 'size': '0.6mb', 'url': ''}]}, {'date': '1 October 2018', 'dates': '2018-10-10T15:45:54.727+08:00', 'documents': [{'isRead': False, 'isFlag': False, 'accountId': '3', 'accountName': 'Mr Tom Jones', 'category': 'Statement - Transactions', 'id': '13', 'name': 'New Test Executed(#Deal14376-11)', 'size': '0.6mb', 'url': ''}]}, {'date': '24 September 2018', 'dates': '2018-10-10T15:45:54.727+08:00', 'documents': [{'isRead': True, 'isFlag': True, 'accountId': '4', 'accountName': 'Adolph Blaine Charles David Earl Frederick Gerald Hubert Irvim John Kenneth Loyd Martin Nero Oliver Paul Quincy Randolph Sherman Thomas Uncas Victor Willian Xerxes Yancy Zeus Wolf', 'category': 'Statement - Transactions', 'id': '14', 'name': 'New Test Executed(#Deal14376-12)', 'size': '0.6mb', 'url': ''}]}, {'date': '23 September 2018', 'dates': '2018-10-10T15:45:54.727+08:00', 'documents': [{'isRead': False, 'isFlag': True, 'accountId': '5', 'accountName': "Justice's Jones", 'category': 'Advice - Cash', 'id': '15', 'name': 'New Test Executed(#Deal14376-13)', 'size': '0.6mb', 'url': ''}]}], 'totalSize': 15, 'unreadNum': 7, 'flaggedNum': 2}}},预期:code=0
+[2019-03-14 17:08:28.490102] INFO: API: 当前模块 断言测试结果
+[2019-03-14 17:08:28.490212] INFO: API: 全部args参数参数信息 , ()
+[2019-03-14 17:08:28.490387] INFO: API: 全部kwargs参数信息 , {'asserqiwang': 'code=0', 'fanhuijson': {'code': 0, 'result': {'code': '0', 'message': 'success', 'data': {'documentsGroup': [{'date': '12 October 2018', 'dates': '2018-10-12T15:45:54.727+08:00', 'documents': [{'isRead': True, 'isFlag': False, 'accountId': '1', 'accountName': 'Mr &amp; Mrs Jones', 'category': 'Advice - Cash', 'id': '1', 'name': 'New Test Executed(#Deale28786-03)', 'size': '1.5mb', 'url': ''}]}, {'date': '11 October 2018', 'dates': '2018-10-11T15:45:54.727+08:00', 'documents': [{'isRead': False, 'isFlag': False, 'accountId': '2', 'accountName': "Jones' Family Trust", 'category': 'Communication', 'id': '2', 'name': 'Fader Forward Advice(#ADV17785-36)', 'size': '1.3mb', 'url': ''}, {'isRead': False, 'isFlag': False, 'accountId': '1', 'accountName': 'Mr &amp; Mrs Jones', 'category': 'Statement - Holdings', 'id': '3', 'name': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed ombr, Lorem ipsum dolor sit amet.', 'size': '0.1mb', 'url': ''}, {'isRead': True, 'isFlag': False, 'accountId': '1', 'accountName': 'Mr &amp; Mrs Jones', 'category': 'Statement - Cash', 'id': '4', 'name': 'New Order Executed(#Deal19486-03)', 'size': '2.4mb', 'url': ''}]}, {'date': '10 October 2018', 'dates': '2018-10-10T15:45:54.727+08:00', 'documents': [{'isRead': True, 'isFlag': False, 'accountId': '3', 'accountName': 'Mr Tom Jones', 'category': 'Statement - Transactions', 'id': '5', 'name': 'New Test Executed(#Deal14376-03)', 'size': '0.6mb', 'url': ''}]}, {'date': '8 October 2018', 'dates': '2018-10-10T15:45:54.727+08:00', 'documents': [{'isRead': False, 'isFlag': False, 'accountId': '3', 'accountName': 'Mr Tom Jones', 'category': 'Advice - Holdings', 'id': '6', 'name': 'New Test Executed(#Deal14376-04)', 'size': '0.6mb', 'url': ''}]}, {'date': '7 October 2018', 'dates': '2018-10-10T15:45:54.727+08:00', 'documents': [{'isRead': True, 'isFlag': False, 'accountId': '3', 'accountName': 'Mr Tom Jones', 'category': 'Advice - Fees', 'id': '7', 'name': 'New Test Executed(#Deal14376-05)', 'size': '0.6mb', 'url': ''}]}, {'date': '6 October 2018', 'dates': '2018-10-10T15:45:54.727+08:00', 'documents': [{'isRead': False, 'isFlag': False, 'accountId': '2', 'accountName': "Jones' Family Trust", 'category': 'Communication', 'id': '8', 'name': 'New Test Executed(#Deal14376-06)', 'size': '0.6mb', 'url': ''}]}, {'date': '5 October 2018', 'dates': '2018-10-10T15:45:54.727+08:00', 'documents': [{'isRead': True, 'isFlag': False, 'accountId': '3', 'accountName': 'Mr Tom Jones', 'category': 'Advice - Fees', 'id': '9', 'name': 'New Test Executed(#Deal14376-07)', 'size': '0.6mb', 'url': ''}]}, {'date': '4 October 2018', 'dates': '2018-10-10T15:45:54.727+08:00', 'documents': [{'isRead': True, 'isFlag': False, 'accountId': '3', 'accountName': 'Mr Tom Jones', 'category': 'Communication', 'id': '10', 'name': 'New Test Executed(#Deal14376-08)', 'size': '0.6mb', 'url': ''}]}, {'date': '3 October 2018', 'dates': '2018-10-10T15:45:54.727+08:00', 'documents': [{'isRead': False, 'isFlag': False, 'accountId': '3', 'accountName': 'Mr Tom Jones', 'category': 'Advice - Cash', 'id': '11', 'name': 'New Test Executed(#Deal14376-09)', 'size': '0.6mb', 'url': ''}]}, {'date': '2 October 2018', 'dates': '2018-10-10T15:45:54.727+08:00', 'documents': [{'isRead': True, 'isFlag': False, 'accountId': '3', 'accountName': 'Mr Tom Jones', 'category': 'Communication', 'id': '12', 'name': 'New Test Executed(#Deal14376-10)', 'size': '0.6mb', 'url': ''}]}, {'date': '1 October 2018', 'dates': '2018-10-10T15:45:54.727+08:00', 'documents': [{'isRead': False, 'isFlag': False, 'accountId': '3', 'accountName': 'Mr Tom Jones', 'category': 'Statement - Transactions', 'id': '13', 'name': 'New Test Executed(#Deal14376-11)', 'size': '0.6mb', 'url': ''}]}, {'date': '24 September 2018', 'dates': '2018-10-10T15:45:54.727+08:00', 'documents': [{'isRead': True, 'isFlag': True, 'accountId': '4', 'accountName': 'Adolph Blaine Charles David Earl Frederick Gerald Hubert Irvim John Kenneth Loyd Martin Nero Oliver Paul Quincy Randolph Sherman Thomas Uncas Victor Willian Xerxes Yancy Zeus Wolf', 'category': 'Statement - Transactions', 'id': '14', 'name': 'New Test Executed(#Deal14376-12)', 'size': '0.6mb', 'url': ''}]}, {'date': '23 September 2018', 'dates': '2018-10-10T15:45:54.727+08:00', 'documents': [{'isRead': False, 'isFlag': True, 'accountId': '5', 'accountName': "Justice's Jones", 'category': 'Advice - Cash', 'id': '15', 'name': 'New Test Executed(#Deal14376-13)', 'size': '0.6mb', 'url': ''}]}], 'totalSize': 15, 'unreadNum': 7, 'flaggedNum': 2}}}}
+expected value: &lt;class 'list'&gt;
+actualed value: &lt;class 'list'&gt;
+expected value: ['0']
+actualed value: ['0']
+actualed value3: ['0']
+result: True
+0
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+    </tbody>
+    <tfoot>
+        <tr id='total_row'>
+            <td>Total</td>
+            <td>1</td>
+            <td class="text text-success">1</td>
+            <td class="text text-danger">0</td>
+            <td class="text text-warning">0</td>
+            <td>&nbsp;</td>
+        </tr>
+    </tfoot>
+</table>
+
+    <div id='ending'>&nbsp;</div>
+</div>
+
+</body>
+</html>

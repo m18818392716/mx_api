@@ -1,0 +1,9 @@
+[2019-03-14 12:56:07.045209] INFO: jiekou: 当前模块 requests封装
+[2019-03-14 12:56:07.045531] INFO: jiekou: 全部args参数参数信息 , ()
+[2019-03-14 12:56:07.045637] INFO: jiekou: 全部kwargs参数信息 , {}
+[2019-03-14 12:56:07.061249] INFO: jiekou: 当前模块 解析测试用例文件
+[2019-03-14 12:56:07.061423] INFO: jiekou: 全部args参数参数信息 , ('/Users/gzuser/PycharmProjects/DemoTest1/myapp/test_case_data/case.xlsx',)
+[2019-03-14 12:56:07.061520] INFO: jiekou: 全部kwargs参数信息 , {}
+[2019-03-14 12:56:07.080582] INFO: jiekou: 当前模块 解析测试用例文件
+[2019-03-14 12:56:07.080751] INFO: jiekou: 全部args参数参数信息 , ('/Users/gzuser/PycharmProjects/DemoTest1/myapp/test_case_data/case.xlsx',)
+[2019-03-14 12:56:07.080849] INFO: jiekou: 全部kwargs参数信息 , {}

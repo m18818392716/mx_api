@@ -1,0 +1,87 @@
+[2019-03-12 17:47:49.444860] INFO: jiekou: 当前模块 requests封装
+[2019-03-12 17:47:49.445156] INFO: jiekou: 全部args参数参数信息 , ()
+[2019-03-12 17:47:49.445257] INFO: jiekou: 全部kwargs参数信息 , {}
+[2019-03-12 17:47:49.453865] INFO: jiekou: 当前模块 解析测试用例文件
+[2019-03-12 17:47:49.454022] INFO: jiekou: 全部args参数参数信息 , ('/Users/gzuser/PycharmProjects/DemoTest1/myapp/test_case_data/case.xlsx',)
+[2019-03-12 17:47:49.454119] INFO: jiekou: 全部kwargs参数信息 , {}
+[2019-03-12 17:47:49.464048] INFO: jiekou: 当前模块 解析测试用例文件
+[2019-03-12 17:47:49.464228] INFO: jiekou: 全部args参数参数信息 , ('/Users/gzuser/PycharmProjects/DemoTest1/myapp/test_case_data/case.xlsx',)
+[2019-03-12 17:47:49.464330] INFO: jiekou: 全部kwargs参数信息 , {}
+[2019-03-12 17:47:49.467493] INFO: jiekou: 当前模块 测试
+[2019-03-12 17:47:49.467657] INFO: jiekou: 全部args参数参数信息 , ()
+[2019-03-12 17:47:49.467758] INFO: jiekou: 全部kwargs参数信息 , {}
+[2019-03-12 17:47:49.544054] INFO: jiekou: inputdata> 参数:, url:/mobile/v1/customer/userprofile ,返回:{'code': 0, 'result': {'code': '0', 'message': 'success', 'data': {'lastLoginTime': 1533882667, 'id': '5', 'userName': 'Jones'}}},预期:code=0
+[2019-03-12 17:47:49.544255] INFO: jiekou: 当前模块 断言测试结果
+[2019-03-12 17:47:49.544355] INFO: jiekou: 全部args参数参数信息 , ()
+[2019-03-12 17:47:49.544449] INFO: jiekou: 全部kwargs参数信息 , {'asserqiwang': 'code=0', 'fanhuijson': {'code': 0, 'result': {'code': '0', 'message': 'success', 'data': {'lastLoginTime': 1533882667, 'id': '5', 'userName': 'Jones'}}}}
+[2019-03-12 17:47:49.544552] INFO: jiekou: 失败重试中
+[2019-03-12 17:47:49.615392] INFO: jiekou: inputdata> 参数:, url:/mobile/v1/customer/userprofile ,返回:{'code': 0, 'result': {'code': '0', 'message': 'success', 'data': {'lastLoginTime': 1533882667, 'id': '5', 'userName': 'Jones'}}},预期:code=0
+[2019-03-12 17:47:49.615637] INFO: jiekou: 当前模块 断言测试结果
+[2019-03-12 17:47:49.615781] INFO: jiekou: 全部args参数参数信息 , ()
+[2019-03-12 17:47:49.615920] INFO: jiekou: 全部kwargs参数信息 , {'asserqiwang': 'code=0', 'fanhuijson': {'code': 0, 'result': {'code': '0', 'message': 'success', 'data': {'lastLoginTime': 1533882667, 'id': '5', 'userName': 'Jones'}}}}
+[2019-03-12 17:47:49.616089] INFO: jiekou: 失败重试中
+[2019-03-12 17:47:49.687141] INFO: jiekou: inputdata> 参数:, url:/mobile/v1/customer/userprofile ,返回:{'code': 0, 'result': {'code': '0', 'message': 'success', 'data': {'lastLoginTime': 1533882667, 'id': '5', 'userName': 'Jones'}}},预期:code=0
+[2019-03-12 17:47:49.687350] INFO: jiekou: 当前模块 断言测试结果
+[2019-03-12 17:47:49.687465] INFO: jiekou: 全部args参数参数信息 , ()
+[2019-03-12 17:47:49.687577] INFO: jiekou: 全部kwargs参数信息 , {'asserqiwang': 'code=0', 'fanhuijson': {'code': 0, 'result': {'code': '0', 'message': 'success', 'data': {'lastLoginTime': 1533882667, 'id': '5', 'userName': 'Jones'}}}}
+[2019-03-12 17:47:49.687697] INFO: jiekou: 失败重试中
+[2019-03-12 17:48:24.878574] INFO: jiekou: inputdata> 参数:, url:/mobile/v1/customer/userprofile ,返回:{'code': 0, 'result': {'code': '0', 'message': 'success', 'data': {'lastLoginTime': 1533882667, 'id': '5', 'userName': 'Jones'}}},预期:code=0
+[2019-03-12 17:48:24.878822] INFO: jiekou: 当前模块 断言测试结果
+[2019-03-12 17:48:24.878968] INFO: jiekou: 全部args参数参数信息 , ()
+[2019-03-12 17:48:24.879116] INFO: jiekou: 全部kwargs参数信息 , {'asserqiwang': 'code=0', 'fanhuijson': {'code': 0, 'result': {'code': '0', 'message': 'success', 'data': {'lastLoginTime': 1533882667, 'id': '5', 'userName': 'Jones'}}}}
+[2019-03-12 17:48:24.879270] INFO: jiekou: 失败重试中
+[2019-03-12 17:48:24.951655] INFO: jiekou: inputdata> 参数:, url:/mobile/v1/customer/userprofile ,返回:{'code': 0, 'result': {'code': '0', 'message': 'success', 'data': {'lastLoginTime': 1533882667, 'id': '5', 'userName': 'Jones'}}},预期:code=0
+[2019-03-12 17:48:24.951990] INFO: jiekou: 当前模块 断言测试结果
+[2019-03-12 17:48:24.952121] INFO: jiekou: 全部args参数参数信息 , ()
+[2019-03-12 17:48:24.952247] INFO: jiekou: 全部kwargs参数信息 , {'asserqiwang': 'code=0', 'fanhuijson': {'code': 0, 'result': {'code': '0', 'message': 'success', 'data': {'lastLoginTime': 1533882667, 'id': '5', 'userName': 'Jones'}}}}
+[2019-03-12 17:48:24.952391] INFO: jiekou: 失败重试中次数用完，最后结果
+[2019-03-12 17:48:25.041571] INFO: jiekou: inputdata> 参数:, url:/mobile/v1/customer/5/overview?currency=GBP ,返回:{'code': 0, 'result': {'code': '0', 'message': 'success', 'data': {'customer': {'name': 'Jones', 'amount': 48676057496.91, 'currency': 'GBP', 'bookingCenter': 'UK Accounts', 'updateDate': '', 'liabilitiesAmount': -48086438537.35, 'liabilitiesCurrency': 'GBP', 'netAssetsAmount': -9136046525.35, 'netAssetsCurrency': 'GBP'}, 'ytd': {'amount': 850920120.0, 'currency': 'GBP'}, 'hasLiabilities': True, 'newDocumentCount': 10}}},预期:code=0
+[2019-03-12 17:48:25.041798] INFO: jiekou: 当前模块 断言测试结果
+[2019-03-12 17:48:25.041929] INFO: jiekou: 全部args参数参数信息 , ()
+[2019-03-12 17:48:25.042068] INFO: jiekou: 全部kwargs参数信息 , {'asserqiwang': 'code=0', 'fanhuijson': {'code': 0, 'result': {'code': '0', 'message': 'success', 'data': {'customer': {'name': 'Jones', 'amount': 48676057496.91, 'currency': 'GBP', 'bookingCenter': 'UK Accounts', 'updateDate': '', 'liabilitiesAmount': -48086438537.35, 'liabilitiesCurrency': 'GBP', 'netAssetsAmount': -9136046525.35, 'netAssetsCurrency': 'GBP'}, 'ytd': {'amount': 850920120.0, 'currency': 'GBP'}, 'hasLiabilities': True, 'newDocumentCount': 10}}}}
+[2019-03-12 17:48:25.042207] INFO: jiekou: 失败重试中
+[2019-03-12 17:48:25.129142] INFO: jiekou: inputdata> 参数:, url:/mobile/v1/customer/5/overview?currency=GBP ,返回:{'code': 0, 'result': {'code': '0', 'message': 'success', 'data': {'customer': {'name': 'Jones', 'amount': 48676057496.91, 'currency': 'GBP', 'bookingCenter': 'UK Accounts', 'updateDate': '', 'liabilitiesAmount': -48086438537.35, 'liabilitiesCurrency': 'GBP', 'netAssetsAmount': -9136046525.35, 'netAssetsCurrency': 'GBP'}, 'ytd': {'amount': 850920120.0, 'currency': 'GBP'}, 'hasLiabilities': True, 'newDocumentCount': 10}}},预期:code=0
+[2019-03-12 17:48:25.129497] INFO: jiekou: 当前模块 断言测试结果
+[2019-03-12 17:48:25.129639] INFO: jiekou: 全部args参数参数信息 , ()
+[2019-03-12 17:48:25.129767] INFO: jiekou: 全部kwargs参数信息 , {'asserqiwang': 'code=0', 'fanhuijson': {'code': 0, 'result': {'code': '0', 'message': 'success', 'data': {'customer': {'name': 'Jones', 'amount': 48676057496.91, 'currency': 'GBP', 'bookingCenter': 'UK Accounts', 'updateDate': '', 'liabilitiesAmount': -48086438537.35, 'liabilitiesCurrency': 'GBP', 'netAssetsAmount': -9136046525.35, 'netAssetsCurrency': 'GBP'}, 'ytd': {'amount': 850920120.0, 'currency': 'GBP'}, 'hasLiabilities': True, 'newDocumentCount': 10}}}}
+[2019-03-12 17:48:25.129892] INFO: jiekou: 失败重试中
+[2019-03-12 17:48:25.221059] INFO: jiekou: inputdata> 参数:, url:/mobile/v1/customer/5/overview?currency=GBP ,返回:{'code': 0, 'result': {'code': '0', 'message': 'success', 'data': {'customer': {'name': 'Jones', 'amount': 48676057496.91, 'currency': 'GBP', 'bookingCenter': 'UK Accounts', 'updateDate': '', 'liabilitiesAmount': -48086438537.35, 'liabilitiesCurrency': 'GBP', 'netAssetsAmount': -9136046525.35, 'netAssetsCurrency': 'GBP'}, 'ytd': {'amount': 850920120.0, 'currency': 'GBP'}, 'hasLiabilities': True, 'newDocumentCount': 10}}},预期:code=0
+[2019-03-12 17:48:25.221267] INFO: jiekou: 当前模块 断言测试结果
+[2019-03-12 17:48:25.221387] INFO: jiekou: 全部args参数参数信息 , ()
+[2019-03-12 17:48:25.221513] INFO: jiekou: 全部kwargs参数信息 , {'asserqiwang': 'code=0', 'fanhuijson': {'code': 0, 'result': {'code': '0', 'message': 'success', 'data': {'customer': {'name': 'Jones', 'amount': 48676057496.91, 'currency': 'GBP', 'bookingCenter': 'UK Accounts', 'updateDate': '', 'liabilitiesAmount': -48086438537.35, 'liabilitiesCurrency': 'GBP', 'netAssetsAmount': -9136046525.35, 'netAssetsCurrency': 'GBP'}, 'ytd': {'amount': 850920120.0, 'currency': 'GBP'}, 'hasLiabilities': True, 'newDocumentCount': 10}}}}
+[2019-03-12 17:48:25.221661] INFO: jiekou: 失败重试中
+[2019-03-12 17:48:25.309850] INFO: jiekou: inputdata> 参数:, url:/mobile/v1/customer/5/overview?currency=GBP ,返回:{'code': 0, 'result': {'code': '0', 'message': 'success', 'data': {'customer': {'name': 'Jones', 'amount': 48676057496.91, 'currency': 'GBP', 'bookingCenter': 'UK Accounts', 'updateDate': '', 'liabilitiesAmount': -48086438537.35, 'liabilitiesCurrency': 'GBP', 'netAssetsAmount': -9136046525.35, 'netAssetsCurrency': 'GBP'}, 'ytd': {'amount': 850920120.0, 'currency': 'GBP'}, 'hasLiabilities': True, 'newDocumentCount': 10}}},预期:code=0
+[2019-03-12 17:48:25.310086] INFO: jiekou: 当前模块 断言测试结果
+[2019-03-12 17:48:25.310228] INFO: jiekou: 全部args参数参数信息 , ()
+[2019-03-12 17:48:25.310380] INFO: jiekou: 全部kwargs参数信息 , {'asserqiwang': 'code=0', 'fanhuijson': {'code': 0, 'result': {'code': '0', 'message': 'success', 'data': {'customer': {'name': 'Jones', 'amount': 48676057496.91, 'currency': 'GBP', 'bookingCenter': 'UK Accounts', 'updateDate': '', 'liabilitiesAmount': -48086438537.35, 'liabilitiesCurrency': 'GBP', 'netAssetsAmount': -9136046525.35, 'netAssetsCurrency': 'GBP'}, 'ytd': {'amount': 850920120.0, 'currency': 'GBP'}, 'hasLiabilities': True, 'newDocumentCount': 10}}}}
+[2019-03-12 17:48:25.310531] INFO: jiekou: 失败重试中
+[2019-03-12 17:48:25.395768] INFO: jiekou: inputdata> 参数:, url:/mobile/v1/customer/5/overview?currency=GBP ,返回:{'code': 0, 'result': {'code': '0', 'message': 'success', 'data': {'customer': {'name': 'Jones', 'amount': 48676057496.91, 'currency': 'GBP', 'bookingCenter': 'UK Accounts', 'updateDate': '', 'liabilitiesAmount': -48086438537.35, 'liabilitiesCurrency': 'GBP', 'netAssetsAmount': -9136046525.35, 'netAssetsCurrency': 'GBP'}, 'ytd': {'amount': 850920120.0, 'currency': 'GBP'}, 'hasLiabilities': True, 'newDocumentCount': 10}}},预期:code=0
+[2019-03-12 17:48:25.395997] INFO: jiekou: 当前模块 断言测试结果
+[2019-03-12 17:48:25.396121] INFO: jiekou: 全部args参数参数信息 , ()
+[2019-03-12 17:48:25.396252] INFO: jiekou: 全部kwargs参数信息 , {'asserqiwang': 'code=0', 'fanhuijson': {'code': 0, 'result': {'code': '0', 'message': 'success', 'data': {'customer': {'name': 'Jones', 'amount': 48676057496.91, 'currency': 'GBP', 'bookingCenter': 'UK Accounts', 'updateDate': '', 'liabilitiesAmount': -48086438537.35, 'liabilitiesCurrency': 'GBP', 'netAssetsAmount': -9136046525.35, 'netAssetsCurrency': 'GBP'}, 'ytd': {'amount': 850920120.0, 'currency': 'GBP'}, 'hasLiabilities': True, 'newDocumentCount': 10}}}}
+[2019-03-12 17:48:25.396382] INFO: jiekou: 失败重试中次数用完，最后结果
+[2019-03-12 17:48:25.466825] INFO: jiekou: inputdata> 参数:{"docType":"All", "accountIds":[], "categories":[]}, url:/mobile/v1/customer/5/documents ,返回:{'code': 0, 'result': {'code': '1000', 'message': 'System error!', 'data': None}},预期:code=0
+[2019-03-12 17:48:25.467059] INFO: jiekou: 当前模块 断言测试结果
+[2019-03-12 17:48:25.467200] INFO: jiekou: 全部args参数参数信息 , ()
+[2019-03-12 17:48:25.467334] INFO: jiekou: 全部kwargs参数信息 , {'asserqiwang': 'code=0', 'fanhuijson': {'code': 0, 'result': {'code': '1000', 'message': 'System error!', 'data': None}}}
+[2019-03-12 17:48:25.467478] INFO: jiekou: 失败重试中
+[2019-03-12 17:48:25.534871] INFO: jiekou: inputdata> 参数:{"docType":"All", "accountIds":[], "categories":[]}, url:/mobile/v1/customer/5/documents ,返回:{'code': 0, 'result': {'code': '1000', 'message': 'System error!', 'data': None}},预期:code=0
+[2019-03-12 17:48:25.535153] INFO: jiekou: 当前模块 断言测试结果
+[2019-03-12 17:48:25.535297] INFO: jiekou: 全部args参数参数信息 , ()
+[2019-03-12 17:48:25.535434] INFO: jiekou: 全部kwargs参数信息 , {'asserqiwang': 'code=0', 'fanhuijson': {'code': 0, 'result': {'code': '1000', 'message': 'System error!', 'data': None}}}
+[2019-03-12 17:48:25.535608] INFO: jiekou: 失败重试中
+[2019-03-12 17:48:25.606527] INFO: jiekou: inputdata> 参数:{"docType":"All", "accountIds":[], "categories":[]}, url:/mobile/v1/customer/5/documents ,返回:{'code': 0, 'result': {'code': '1000', 'message': 'System error!', 'data': None}},预期:code=0
+[2019-03-12 17:48:25.606780] INFO: jiekou: 当前模块 断言测试结果
+[2019-03-12 17:48:25.606976] INFO: jiekou: 全部args参数参数信息 , ()
+[2019-03-12 17:48:25.607123] INFO: jiekou: 全部kwargs参数信息 , {'asserqiwang': 'code=0', 'fanhuijson': {'code': 0, 'result': {'code': '1000', 'message': 'System error!', 'data': None}}}
+[2019-03-12 17:48:25.607275] INFO: jiekou: 失败重试中
+[2019-03-12 17:48:25.680766] INFO: jiekou: inputdata> 参数:{"docType":"All", "accountIds":[], "categories":[]}, url:/mobile/v1/customer/5/documents ,返回:{'code': 0, 'result': {'code': '1000', 'message': 'System error!', 'data': None}},预期:code=0
+[2019-03-12 17:48:25.681073] INFO: jiekou: 当前模块 断言测试结果
+[2019-03-12 17:48:25.681249] INFO: jiekou: 全部args参数参数信息 , ()
+[2019-03-12 17:48:25.681434] INFO: jiekou: 全部kwargs参数信息 , {'asserqiwang': 'code=0', 'fanhuijson': {'code': 0, 'result': {'code': '1000', 'message': 'System error!', 'data': None}}}
+[2019-03-12 17:48:25.681583] INFO: jiekou: 失败重试中
+[2019-03-12 17:48:25.751047] INFO: jiekou: inputdata> 参数:{"docType":"All", "accountIds":[], "categories":[]}, url:/mobile/v1/customer/5/documents ,返回:{'code': 0, 'result': {'code': '1000', 'message': 'System error!', 'data': None}},预期:code=0
+[2019-03-12 17:48:25.751287] INFO: jiekou: 当前模块 断言测试结果
+[2019-03-12 17:48:25.751428] INFO: jiekou: 全部args参数参数信息 , ()
+[2019-03-12 17:48:25.751565] INFO: jiekou: 全部kwargs参数信息 , {'asserqiwang': 'code=0', 'fanhuijson': {'code': 0, 'result': {'code': '1000', 'message': 'System error!', 'data': None}}}
+[2019-03-12 17:48:25.751709] INFO: jiekou: 失败重试中次数用完，最后结果

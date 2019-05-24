@@ -1,0 +1,16 @@
+[2019-03-13 14:57:53.026053] INFO: jiekou: 当前模块 requests封装
+[2019-03-13 14:57:53.026366] INFO: jiekou: 全部args参数参数信息 , ()
+[2019-03-13 14:57:53.026464] INFO: jiekou: 全部kwargs参数信息 , {}
+[2019-03-13 14:57:53.034547] INFO: jiekou: 当前模块 解析测试用例文件
+[2019-03-13 14:57:53.034705] INFO: jiekou: 全部args参数参数信息 , ('/Users/gzuser/PycharmProjects/DemoTest1/myapp/test_case_data/case.xlsx',)
+[2019-03-13 14:57:53.034801] INFO: jiekou: 全部kwargs参数信息 , {}
+[2019-03-13 14:57:53.046690] INFO: jiekou: 当前模块 解析测试用例文件
+[2019-03-13 14:57:53.046864] INFO: jiekou: 全部args参数参数信息 , ('/Users/gzuser/PycharmProjects/DemoTest1/myapp/test_case_data/case.xlsx',)
+[2019-03-13 14:57:53.046962] INFO: jiekou: 全部kwargs参数信息 , {}
+[2019-03-13 14:57:53.050049] INFO: jiekou: 当前模块 测试
+[2019-03-13 14:57:53.050285] INFO: jiekou: 全部args参数参数信息 , ()
+[2019-03-13 14:57:53.050413] INFO: jiekou: 全部kwargs参数信息 , {}
+[2019-03-13 14:57:53.131745] INFO: jiekou: inputdata> headers:{'AMSESSION': 'ukdata5', 'Region': 'uk', 'Content-Type': 'application/json;charset=UTF-8'}, 参数:, url:/mobile/v1/customer/userprofile ,返回:{'code': 0, 'result': {'code': '0', 'message': 'success', 'data': {'lastLoginTime': 1533882667, 'id': '5', 'userName': 'Jones'}}},预期:code=0
+[2019-03-13 14:57:53.131941] INFO: jiekou: 当前模块 断言测试结果
+[2019-03-13 14:57:53.132053] INFO: jiekou: 全部args参数参数信息 , ()
+[2019-03-13 14:57:53.132163] INFO: jiekou: 全部kwargs参数信息 , {'asserqiwang': 'code=0', 'fanhuijson': {'code': 0, 'result': {'code': '0', 'message': 'success', 'data': {'lastLoginTime': 1533882667, 'id': '5', 'userName': 'Jones'}}}}

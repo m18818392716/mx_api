@@ -1,0 +1,22 @@
+{
+   "camera": {
+      "created": "1531925035",
+      "type": 1,
+      "description": "A bridge is a structure that is built over a railway, river, or road so that people or vehicles can cross from one side to the other.",
+      "location": {
+         "locationID":"1",
+         "country": "china",
+         "city": "xian",
+         "region": "changanqu"
+      },
+      "project_id": "Golden Gate Bridge",
+      "task_id": "23232",
+      "camera_id": "23232",
+      "mu": "mm",
+      "value": {
+         "x": "123123",
+         "y": "123123"
+      },
+      "ext_info": "null"
+   }
+}

@@ -1,0 +1,11 @@
+[2019-03-14 14:58:02.380224] INFO: jiekou: 当前模块 requests封装
+[2019-03-14 14:58:02.380607] INFO: jiekou: 全部args参数参数信息 , ()
+[2019-03-14 14:58:02.380715] INFO: jiekou: 全部kwargs参数信息 , {}
+[2019-03-14 14:58:02.387119] INFO: jiekou: 当前模块 解析测试用例文件
+[2019-03-14 14:58:02.387257] INFO: jiekou: 全部args参数参数信息 , ('/Users/gzuser/PycharmProjects/DemoTest1/myapp/testCase./test_case_data/case.xlsx',)
+[2019-03-14 14:58:02.387352] INFO: jiekou: 全部kwargs参数信息 , {}
+[2019-03-14 14:58:02.387474] INFO: jiekou: 打开测试用例失败，原因是:[Errno 2] No such file or directory: '/Users/gzuser/PycharmProjects/DemoTest1/myapp/testCase./test_case_data/case.xlsx'
+[2019-03-14 14:58:02.389734] INFO: jiekou: 当前模块 解析测试用例文件
+[2019-03-14 14:58:02.389851] INFO: jiekou: 全部args参数参数信息 , ('/Users/gzuser/PycharmProjects/DemoTest1/myapp/testCase./test_case_data/case.xlsx',)
+[2019-03-14 14:58:02.389945] INFO: jiekou: 全部kwargs参数信息 , {}
+[2019-03-14 14:58:02.390056] INFO: jiekou: 打开测试用例失败，原因是:[Errno 2] No such file or directory: '/Users/gzuser/PycharmProjects/DemoTest1/myapp/testCase./test_case_data/case.xlsx'

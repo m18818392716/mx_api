@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>http接口自动化测试报告</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 引入 Bootstrap -->
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+    <!-- HTML5 Shim 和 Respond.js 用于让 IE8 支持 HTML5元素和媒体查询 -->
+    <!-- 注意： 如果通过 file://  引入 Respond.js 文件，则该文件无法起效果 -->
+    <!--[if lt IE 9]>
+     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+     <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+    <style type="text/css">
+        .hidden-detail,.hidden-tr{
+            display:none;
+        }
+    </style>
+</head>
+<body>
+	
+<div  class='col-md-4 col-md-offset-4' style='margin-left:3%;'>
+<h1>Python接口测试的结果</h1>
+    <table  class="table table-hover table-condensed">
+            <tbody>
+                <tr>
+		<td><strong>开始时间:</strong> 2019-03-14 17:01:32.872318</td>
+		</tr>
+		<td><strong>结束时间:</strong> 2019-03-14 17:01:33.103869</td></tr>
+		<td><strong>执行人:</strong> Susanna Chen</td></tr>
+		<td><strong>所属部门:</strong> 测试部</td></tr>
+		<td><strong>项目名称:</strong> HSBC Private Bank</td></tr>
+		<td><strong>耗时:</strong> 0:00:00.231551</td></tr>
+		<td><strong>结果:</strong>
+			<span >Pass: <strong >3</strong>
+			Fail: <strong >0</strong>
+			       exception: <strong >0</strong> 
+			       weizhicuowu : <strong >0</strong></span></td>                  
+			   </tr> 
+			   </tbody></table>
+			   </div> <div class="row " style="margin:60px">
+        <div style='    margin-top: 18%;' >
+        <div class="btn-group" role="group" aria-label="...">
+            <button type="button" id="check-all" class="btn btn-primary">所有用例</button>
+            <button type="button" id="check-success" class="btn btn-success">成功用例</button>
+            <button type="button" id="check-danger" class="btn btn-danger">失败用例</button>
+            <button type="button" id="check-warning" class="btn btn-warning">错误用例</button>
+            <button type="button" id="check-except" class="btn btn-defult">异常用例</button>
+        </div>
+        <div class="btn-group" role="group" aria-label="...">
+        </div>
+        <table class="table table-hover table-condensed table-bordered" style="word-wrap:break-word; word-break:break-all;  margin-top: 7px;">
+		<tr >
+            <td width="300px"><strong>用例ID&nbsp;</strong></td>
+            <td width="500px"><strong>用例名字</strong></td>
+            <td width="300px"><strong>key</strong></td>
+            <td width="600px"><strong>请求内容</strong></td>
+            <td width="500px"><strong>url</strong></td>
+            <td width="100px"><strong>请求方式</strong></td>
+            <td width="200px"><strong>预期</strong></td>
+            <td width="1000px"><strong>实际返回</strong></td>  
+            <td width="100px"><strong>结果</strong></td>
+        </tr>
+     
+        <tr class="case-tr success">
+            <td>1.0</td>
+            <td>customer userprofile接口</td>
+            <td></td>
+            <td></td>
+            <td>/mobile/v1/customer/userprofile</td>
+            <td>GET</td>
+            <td>code=0</td>
+            <td>{'code': '0', 'message': 'success', 'data': {'lastLoginTime': 1533882667, 'id': '5', 'userName': 'Jones'}}</td>
+            <td bgcolor="green">pass</td>
+        </tr>
+    
+        <tr class="case-tr success">
+            <td>2.0</td>
+            <td>customer overview接口</td>
+            <td></td>
+            <td></td>
+            <td>/mobile/v1/customer/5/overview?currency=GBP</td>
+            <td>GET</td>
+            <td>code=0</td>
+            <td>{'code': '0', 'message': 'success', 'data': {'customer': {'name': 'Jones', 'amount': 48676057496.91, 'currency': 'GBP', 'bookingCenter': 'UK Accounts', 'updateDate': '', 'liabilitiesAmount': -48086438537.35, 'liabilitiesCurrency': 'GBP', 'netAssetsAmount': -9136046525.35, 'netAssetsCurrency': 'GBP'}, 'ytd': {'amount': 850920120.0, 'currency': 'GBP'}, 'hasLiabilities': True, 'newDocumentCount': 10}}</td>
+            <td bgcolor="green">pass</td>
+        </tr>
+    
+        <tr class="case-tr success">
+            <td>2.0</td>
+            <td>customer documents接口</td>
+            <td></td>
+            <td>{"docType":"All","accountIds":[],"categories":[]}</td>
+            <td>/mobile/v1/customer/5/documents</td>
+            <td>POST</td>
+            <td>code=0</td>
+            <td>{'code': '0', 'message': 'success', 'data': {'documentsGroup': [{'date': '12 October 2018', 'dates': '2018-10-12T15:45:54.727+08:00', 'documents': [{'isRead': True, 'isFlag': False, 'accountId': '1', 'accountName': 'Mr & Mrs Jones', 'category': 'Advice - Cash', 'id': '1', 'name': 'New Test Executed(#Deale28786-03)', 'size': '1.5mb', 'url': ''}]}, {'date': '11 October 2018', 'dates': '2018-10-11T15:45:54.727+08:00', 'documents': [{'isRead': False, 'isFlag': False, 'accountId': '2', 'accountName': "Jones' Family Trust", 'category': 'Communication', 'id': '2', 'name': 'Fader Forward Advice(#ADV17785-36)', 'size': '1.3mb', 'url': ''}, {'isRead': False, 'isFlag': False, 'accountId': '1', 'accountName': 'Mr & Mrs Jones', 'category': 'Statement - Holdings', 'id': '3', 'name': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed ombr, Lorem ipsum dolor sit amet.', 'size': '0.1mb', 'url': ''}, {'isRead': True, 'isFlag': False, 'accountId': '1', 'accountName': 'Mr & Mrs Jones', 'category': 'Statement - Cash', 'id': '4', 'name': 'New Order Executed(#Deal19486-03)', 'size': '2.4mb', 'url': ''}]}, {'date': '10 October 2018', 'dates': '2018-10-10T15:45:54.727+08:00', 'documents': [{'isRead': True, 'isFlag': False, 'accountId': '3', 'accountName': 'Mr Tom Jones', 'category': 'Statement - Transactions', 'id': '5', 'name': 'New Test Executed(#Deal14376-03)', 'size': '0.6mb', 'url': ''}]}, {'date': '8 October 2018', 'dates': '2018-10-10T15:45:54.727+08:00', 'documents': [{'isRead': False, 'isFlag': False, 'accountId': '3', 'accountName': 'Mr Tom Jones', 'category': 'Advice - Holdings', 'id': '6', 'name': 'New Test Executed(#Deal14376-04)', 'size': '0.6mb', 'url': ''}]}, {'date': '7 October 2018', 'dates': '2018-10-10T15:45:54.727+08:00', 'documents': [{'isRead': True, 'isFlag': False, 'accountId': '3', 'accountName': 'Mr Tom Jones', 'category': 'Advice - Fees', 'id': '7', 'name': 'New Test Executed(#Deal14376-05)', 'size': '0.6mb', 'url': ''}]}, {'date': '6 October 2018', 'dates': '2018-10-10T15:45:54.727+08:00', 'documents': [{'isRead': False, 'isFlag': False, 'accountId': '2', 'accountName': "Jones' Family Trust", 'category': 'Communication', 'id': '8', 'name': 'New Test Executed(#Deal14376-06)', 'size': '0.6mb', 'url': ''}]}, {'date': '5 October 2018', 'dates': '2018-10-10T15:45:54.727+08:00', 'documents': [{'isRead': True, 'isFlag': False, 'accountId': '3', 'accountName': 'Mr Tom Jones', 'category': 'Advice - Fees', 'id': '9', 'name': 'New Test Executed(#Deal14376-07)', 'size': '0.6mb', 'url': ''}]}, {'date': '4 October 2018', 'dates': '2018-10-10T15:45:54.727+08:00', 'documents': [{'isRead': True, 'isFlag': False, 'accountId': '3', 'accountName': 'Mr Tom Jones', 'category': 'Communication', 'id': '10', 'name': 'New Test Executed(#Deal14376-08)', 'size': '0.6mb', 'url': ''}]}, {'date': '3 October 2018', 'dates': '2018-10-10T15:45:54.727+08:00', 'documents': [{'isRead': False, 'isFlag': False, 'accountId': '3', 'accountName': 'Mr Tom Jones', 'category': 'Advice - Cash', 'id': '11', 'name': 'New Test Executed(#Deal14376-09)', 'size': '0.6mb', 'url': ''}]}, {'date': '2 October 2018', 'dates': '2018-10-10T15:45:54.727+08:00', 'documents': [{'isRead': True, 'isFlag': False, 'accountId': '3', 'accountName': 'Mr Tom Jones', 'category': 'Communication', 'id': '12', 'name': 'New Test Executed(#Deal14376-10)', 'size': '0.6mb', 'url': ''}]}, {'date': '1 October 2018', 'dates': '2018-10-10T15:45:54.727+08:00', 'documents': [{'isRead': False, 'isFlag': False, 'accountId': '3', 'accountName': 'Mr Tom Jones', 'category': 'Statement - Transactions', 'id': '13', 'name': 'New Test Executed(#Deal14376-11)', 'size': '0.6mb', 'url': ''}]}, {'date': '24 September 2018', 'dates': '2018-10-10T15:45:54.727+08:00', 'documents': [{'isRead': True, 'isFlag': True, 'accountId': '4', 'accountName': 'Adolph Blaine Charles David Earl Frederick Gerald Hubert Irvim John Kenneth Loyd Martin Nero Oliver Paul Quincy Randolph Sherman Thomas Uncas Victor Willian Xerxes Yancy Zeus Wolf', 'category': 'Statement - Transactions', 'id': '14', 'name': 'New Test Executed(#Deal14376-12)', 'size': '0.6mb', 'url': ''}]}, {'date': '23 September 2018', 'dates': '2018-10-10T15:45:54.727+08:00', 'documents': [{'isRead': False, 'isFlag': True, 'accountId': '5', 'accountName': "Justice's Jones", 'category': 'Advice - Cash', 'id': '15', 'name': 'New Test Executed(#Deal14376-13)', 'size': '0.6mb', 'url': ''}]}], 'totalSize': 15, 'unreadNum': 7, 'flaggedNum': 2}}</td>
+            <td bgcolor="green">pass</td>
+        </tr>
+    </div></div></table><script src="https://code.jquery.com/jquery.js"></script>
+<script src="https://cdn.bootcss.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+	$("#check-danger").click(function(e){
+	    $(".case-tr").removeClass("hidden-tr");
+        $(".success").addClass("hidden-tr");
+        $(".warning").addClass("hidden-tr");
+        $(".error").addClass("hidden-tr");
+	});
+	$("#check-warning").click(function(e){
+		 $(".case-tr").removeClass("hidden-tr");
+        $(".success").addClass("hidden-tr");
+        $(".danger").addClass("hidden-tr");
+        $(".error").addClass("hidden-tr");
+	});
+	$("#check-success").click(function(e){
+		 $(".case-tr").removeClass("hidden-tr");
+        $(".warning").addClass("hidden-tr");
+        $(".danger").addClass("hidden-tr");
+        $(".error").addClass("hidden-tr");
+	});
+	$("#check-except").click(function(e){
+		 $(".case-tr").removeClass("hidden-tr");
+        $(".warning").addClass("hidden-tr");
+        $(".danger").addClass("hidden-tr");
+        $(".success").addClass("hidden-tr");
+	});
+	$("#check-all").click(function(e){
+	    $(".case-tr").removeClass("hidden-tr");
+	});
+</script>
+</body></html>
