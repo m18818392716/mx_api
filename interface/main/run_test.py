@@ -67,7 +67,7 @@ class RunTest:
                             request_data1 = json.loads(request_data)
 
                             for i, v in enumerate(depend_key):
-                                request_data1[v] = depend_response_data[i][0]
+                                request_data1[v] = depend_response_data[i]
 
                             request_data = json.dumps(request_data1)
                             print(request_data)
@@ -76,7 +76,7 @@ class RunTest:
                                 request_data1 = {}
 
                                 for i, v in enumerate(depend_key):
-                                    request_data1[v] = depend_response_data[i][0]
+                                    request_data1[v] = depend_response_data[i]
 
                                 request_data = json.dumps(request_data1)
                                 print(request_data)
@@ -84,7 +84,7 @@ class RunTest:
                                 request_data1 = {}
 
                                 for i, v in enumerate(depend_key):
-                                    request_data1[v] = depend_response_data[i][0]
+                                    request_data1[v] = depend_response_data[i]
 
                                 request_data = request_data1
                                 print(request_data)
@@ -144,7 +144,7 @@ class RunTest:
                         print('请求参数类型：%s' % type(request_data))
                         print('返回状态码：%s' % response.status_code)
                         # print(json.dumps(response.json(), ensure_ascii=False, sort_keys=True, indent=2))
-                        print(res)
+                        # print(res) 先注释掉
                     else:
                         # if content_type == None:
                         res = self.run_method.run_main(method, url, request_data)
@@ -157,7 +157,7 @@ class RunTest:
                         print('请求参数类型：%s' % type(request_data))
                         print('返回状态码：%s' % response.status_code)
                         # print(json.dumps(response.json(), ensure_ascii=False, sort_keys=True, indent=2))
-                        print(res)
+                        # print(res) 先注释掉
 
                     # if expect != None:
                     #     if self.com_util.is_equal_dict(expect, res) == True:
@@ -176,7 +176,6 @@ class RunTest:
                     print('-----------')
                     print(type(res))
                     print(type(response))
-                    # json.loads(res)
                     assert_equals(json.loads(res)['state'], 1, "测试失败...")
             except Exception as e:
                 print(e)

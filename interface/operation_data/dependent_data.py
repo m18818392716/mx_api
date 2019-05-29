@@ -72,7 +72,7 @@ class DependdentData:
 
             # request_data[depend_key] = depend_response_data
             for i, v in enumerate(depend_key):
-                request_data[v] = depend_response_data[i][0]
+                request_data[v] = depend_response_data[i]
 
         if header == 'write':
             # if content_type == None:
@@ -123,7 +123,7 @@ class DependdentData:
             print('请求url：%s' % response.url)
             print('请求参数：%s' % request_data)
             # print(json.dumps(response.json(), ensure_ascii=False, sort_keys=True, indent=2))
-            print(res)
+            # print(res) 先注释掉
         else:
             # if content_type == None:
             res = self.run_method.run_main(method, url, request_data)
@@ -134,7 +134,7 @@ class DependdentData:
             print('请求url：%s' % response.url)
             print('请求参数：%s' % request_data)
             # print(json.dumps(response.json(), ensure_ascii=False, sort_keys=True, indent=2))
-            print(res)
+            # print(res) 先注释掉
 
 
 
@@ -200,15 +200,21 @@ class DependdentData:
             for i in key:
 
                 print("-------------------------------------------------------------------")
-                print(i)
+                print("字段名：%s" %i)
 
                 if isinstance(depend_response_key_data, list):
 
                     list2 = []
                     for j, v in enumerate(depend_response_key_data):
-
                         print(j, v)
-                        list2.append(depend_response_key_data[j][i])
+                        if v.find('[') > 0:
+                            start = v.find('[')
+                            end = v.find(']')
+                            key = v[0: start]
+                            index = v[(start + 1): end]
+                            list2.append(depend_response_key_data[index][i])
+                        else:
+                            list2.append(depend_response_key_data[j][i])
 
                     depend_response_key_data = list2
                 else:
@@ -236,6 +242,7 @@ class DependdentData:
         # for math in madle:
         #     list.append(math.value)  ## 使用 append() 添加元素
         # return list
+
 
 if __name__ == '__main__':
     order = {
