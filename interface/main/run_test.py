@@ -6,6 +6,7 @@
 # @Software: PyCharm
 
 import sys
+import traceback
 sys.path.append("D:\software\PycharmProject\APITest\interface")
 from interface.base.runmethod import RunMethod
 from interface.operation_data.get_data import GetData
@@ -15,6 +16,7 @@ from interface.tools.send_email import SendEmail
 from interface.tools.operation_header import OperationHeader
 from interface.tools.operation_json import OperetionJson
 from ptest.assertion import *
+
 # from assertpy import assert_that
 import requests
 import json
@@ -37,6 +39,7 @@ class RunTest:
         rows_count = self.data.get_case_lines()
         print('rows_count: %d' % rows_count)
         for i in range(1,rows_count):
+            print("--------- TEST CASE [ %s ] START ---------" % i)
             try:
                 is_run = self.data.get_is_run(i)
                 if is_run:
@@ -90,16 +93,7 @@ class RunTest:
                                 print(request_data)
 
                     if header == 'write':
-                        # if content_type == None:
                         res = self.run_method.run_main(method, url, request_data, self.headers)
-                        response = self.run_method.run_request(method, url, request_data, self.headers)
-                        # else :
-                        #     res = self.run_method.run_main_json(method, url, request_data, self.headers)
-                        #     response = self.run_method.run_request_json(method, url, request_data, self.headers)
-                        print('请求url：%s' % response.url)
-                        print('请求参数：%s' % request_data)
-                        print('请求参数类型：%s' % type(request_data))
-                        print('返回状态码：%s' % response.status_code)
                         # print(json.dumps(response.json(), ensure_ascii=False, sort_keys=True, indent=2))
                         print(res)
                         # op_header = OperationHeader(res)
@@ -131,31 +125,11 @@ class RunTest:
                         }
 
                         # res = self.run_method.run_main(method,url,request_data,cookies)
-
-                        # if content_type == None:
                         res = self.run_method.run_main(method, url, request_data, headers)
-                        response = self.run_method.run_request(method, url, request_data, headers)
-                        # else :
-                        #     res = self.run_method.run_main_json(method, url, request_data, headers)
-                        #     response = self.run_method.run_request_json(method, url, request_data, headers)
-
-                        print('请求url：%s' % response.url)
-                        print('请求参数：%s' % request_data)
-                        print('请求参数类型：%s' % type(request_data))
-                        print('返回状态码：%s' % response.status_code)
                         # print(json.dumps(response.json(), ensure_ascii=False, sort_keys=True, indent=2))
                         # print(res) 先注释掉
                     else:
-                        # if content_type == None:
                         res = self.run_method.run_main(method, url, request_data)
-                        response = self.run_method.run_request(method, url, request_data)
-                        # else:
-                        #     res = self.run_method.run_main_json(method, url, request_data)
-                        #     response = self.run_method.run_request_json(method, url, request_data)
-                        print('请求url：%s' % response.url)
-                        print('请求参数：%s' % request_data)
-                        print('请求参数类型：%s' % type(request_data))
-                        print('返回状态码：%s' % response.status_code)
                         # print(json.dumps(response.json(), ensure_ascii=False, sort_keys=True, indent=2))
                         # print(res) 先注释掉
 
@@ -173,14 +147,13 @@ class RunTest:
                     #         print('actual result type is: %s' % type(res))
                     #         print('fail test.......')
                     # assert_equals(response.status_code, 200, "测试失败...")
-                    print('-----------')
-                    print(type(res))
-                    print(type(response))
                     assert_equals(json.loads(res)['state'], 1, "测试失败...")
-            except Exception as e:
-                print(e)
+            except Exception:
+                print('TEST CASE [ %s ] failed...' % i)
+                traceback.print_exc()
                 fail_count.append(i)
-                print('test failed...')
+            finally:
+                print("--------- TEST CASE [ %s ] END ---------\n" % i)
 
 
 

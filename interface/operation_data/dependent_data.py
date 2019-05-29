@@ -75,14 +75,7 @@ class DependdentData:
                 request_data[v] = depend_response_data[i]
 
         if header == 'write':
-            # if content_type == None:
             res = self.run_method.run_main(method, url, request_data, self.headers)
-            response = self.run_method.run_request(method, url, request_data, self.headers)
-            # else:
-            #     res = self.run_method.run_main_json(method, url, request_data, self.headers)
-            #     response = self.run_method.run_request_json(method, url, request_data, self.headers)
-            print('请求url：%s' % response.url)
-            print('请求参数：%s' % request_data)
             # print(json.dumps(response.json(), ensure_ascii=False, sort_keys=True, indent=2))
             print(res)
             # op_header = OperationHeader(res)
@@ -114,25 +107,11 @@ class DependdentData:
             }
 
             # res = self.run_method.run_main(method,url,request_data,cookies)
-            # if content_type == None:
             res = self.run_method.run_main(method, url, request_data, headers)
-            response = self.run_method.run_request(method, url, request_data, headers)
-            # else:
-            #     res = self.run_method.run_main_json(method, url, request_data, headers)
-            #     response = self.run_method.run_request_json(method, url, request_data, headers)
-            print('请求url：%s' % response.url)
-            print('请求参数：%s' % request_data)
             # print(json.dumps(response.json(), ensure_ascii=False, sort_keys=True, indent=2))
             # print(res) 先注释掉
         else:
-            # if content_type == None:
             res = self.run_method.run_main(method, url, request_data)
-            response = self.run_method.run_request(method, url, request_data)
-            # else:
-            #     res = self.run_method.run_main_json(method, url, request_data)
-            #     response = self.run_method.run_request_json(method, url, request_data)
-            print('请求url：%s' % response.url)
-            print('请求参数：%s' % request_data)
             # print(json.dumps(response.json(), ensure_ascii=False, sort_keys=True, indent=2))
             # print(res) 先注释掉
 

@@ -24,6 +24,11 @@ class RunMethod:
             res = requests.post(url=url, params=data, verify=False)
         # return res.json()
 
+        print('请求url：%s' % res.url)
+        print('请求参数：%s' % data)
+        print('请求参数类型：%s' % type(data))
+        print('返回状态码：%s' % res.status_code)
+
         if res.content:
             return res.json()
 
@@ -34,6 +39,13 @@ class RunMethod:
         else:
             res = requests.get(url=url, params=data, verify=False)
         # return res.json()
+
+        print('请求url：%s' % res.url)
+        print('请求参数：%s' % data)
+        print('请求参数类型：%s' % type(data))
+        print('返回状态码：%s' % res.status_code)
+
+
         if res.content:
             return res.json()
 
@@ -44,7 +56,10 @@ class RunMethod:
         else:
             res = self.get_main(url, data, header)
 
-        return json.dumps(res, ensure_ascii=False, sort_keys=True, indent=2)
+        responseJson = json.dumps(res, ensure_ascii=False, sort_keys=True, indent=2)
+        # 返回的数据有点长..
+        # print('返回数据：\n%s' % responseJson)
+        return responseJson
         # return res
 
 
