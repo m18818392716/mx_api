@@ -1,4 +1,4 @@
-#-*- coding:utf-8 -*-
+# -*- coding:utf-8 -*-
 # @Time    : 2019/3/27 下午3:50
 # @Author  : Susanna Chen
 # @Site    : 
@@ -7,6 +7,7 @@
 
 import sys
 import traceback
+
 sys.path.append("D:\software\PycharmProject\APITest\interface")
 from interface.base.runmethod import RunMethod
 from interface.operation_data.get_data import GetData
@@ -15,11 +16,15 @@ from interface.operation_data.dependent_data import DependdentData
 from interface.tools.send_email import SendEmail
 from interface.tools.operation_header import OperationHeader
 from interface.tools.operation_json import OperetionJson
+from interface.dataconfig.request_config import *
+from interface.case.case_response import *
 from ptest.assertion import *
 
 # from assertpy import assert_that
 import requests
 import json
+
+
 class RunTest:
     def __init__(self):
         self.run_method = RunMethod()
@@ -27,22 +32,22 @@ class RunTest:
         self.com_util = CommonUtil()
         self.send_mai = SendEmail()
         # self.headers = {"AMSESSION":"ukdata5", "Region":"uk", "Content-Type": "application/json;charset=UTF-8"}
-        self.headers = {"token": "0e19cc44aabf42a7bb9fa29df751b872", "lan": "zh-Hans", "app_version":"3.0.0", "uuid": "c61bc941b62843da98ddadb97b3d50bd", "Content-Type": "application/x-www-form-urlencoded; charset=utf-8"}
 
-    #程序执行的
+    # 程序执行的
     def go_on_run(self):
         res = None
         response = None
         pass_count = []
         fail_count = []
-        #10  0,1,2,3
+        # 10  0,1,2,3
         rows_count = self.data.get_case_lines()
         print('rows_count: %d' % rows_count)
-        for i in range(1,rows_count):
+        for i in range(1, rows_count):
             print("--------- TEST CASE [ %s ] START ---------" % i)
             try:
                 is_run = self.data.get_is_run(i)
                 if is_run:
+                    case_id = self.data.get_case_id(i)
                     url = self.data.get_request_url(i)
                     method = self.data.get_request_method(i)
                     content_type = self.data.get_request_content_type(i)
@@ -59,53 +64,68 @@ class RunTest:
                         # depend_key = self.data.get_depend_field(i)
                         depend_key = self.data.get_depend_field(i).split(',')
                         print('依赖关键字：%s' % depend_key)
-                        print('依赖关键字：%s' % type(depend_key))
-                        print(depend_response_data)
-                        print(depend_response_data[0])
-                        print('依赖值类型：%s' % type(depend_response_data))
+                        # print('依赖关键字：%s' % type(depend_key))
+                        # print(depend_response_data)
+                        # print(depend_response_data[0])
+                        # print('依赖值类型：%s' % type(depend_response_data))
                         print('请求数据：%s' % request_data)
                         print('请求数据类型：%s' % type(request_data))
 
-                        if request_data != None:
-                            request_data1 = json.loads(request_data)
-
-                            for i, v in enumerate(depend_key):
-                                request_data1[v] = depend_response_data[i]
-
-                            request_data = json.dumps(request_data1)
-                            print(request_data)
+                        if content_type:
+                            # 如果不是application/json，那么就拼接字符串的形式： action=1&channel_id=84
+                            for j, v in enumerate(depend_key):
+                                if request_data:
+                                    request_data = '%s&%s=%s' % (request_data, v, depend_response_data[j])
+                                else:
+                                    request_data = '%s=%s' % (v, depend_response_data[j])
+                        # elif request_data:
+                        #     request_data1 = json.loads(request_data)
+                        #
+                        #     for j, v in enumerate(depend_key):
+                        #         request_data1[v] = depend_response_data[j]
+                        #
+                        #     request_data = json.dumps(request_data1)
+                        #     print(request_data)
                         else:
+                            request_data1 = {}
+                            # 将excel表中定义的拼接参数转为字典
+                            if request_data:
+                                params = request_data.split('&')
+                                for param in params:
+                                    param_key = param.split('=')[0]
+                                    param_value = param.split('=')[1]
+                                    request_data1[param_key] = param_value
+
                             if method == 'Post':
-                                request_data1 = {}
-
-                                for i, v in enumerate(depend_key):
-                                    request_data1[v] = depend_response_data[i]
-
+                                # 字符串字典的形式： {'action':1,'channel_id':82}
+                                for j, v in enumerate(depend_key):
+                                    request_data1[v] = depend_response_data[j]
                                 request_data = json.dumps(request_data1)
-                                print(request_data)
                             else:
-                                request_data1 = {}
-
-                                for i, v in enumerate(depend_key):
-                                    request_data1[v] = depend_response_data[i]
-
+                                for j, v in enumerate(depend_key):
+                                    request_data1[v] = depend_response_data[j]
                                 request_data = request_data1
-                                print(request_data)
+                            # print(request_data)
 
                     if header == 'write':
-                        res = self.run_method.run_main(method, url, request_data, self.headers)
+                        res = self.run_method.run_main(method, url, request_data, get_header())
                         # print(json.dumps(response.json(), ensure_ascii=False, sort_keys=True, indent=2))
-                        print(res)
+                        # print(res)
+
+                        uuid = json.loads(res)['result']['uuid']
+                        token = json.loads(res)['result']['token']
+                        set_header('uuid', uuid)
+                        set_header('token', token)
                         # op_header = OperationHeader(res)
-                        op_header = OperationHeader()
+                        # op_header = OperationHeader()
                         # op_header.write_cookie()
-                        op_header.write_header()
+                        # op_header.write_header()
 
                     elif header == 'yes':
-                        op_json = OperetionJson('../dataconfig/cookie.json')
-                        header_json = OperetionJson('../dataconfig/header.json')
+                        # op_json = OperetionJson('../dataconfig/cookie.json')
+                        # header_json = OperetionJson('../dataconfig/header.json')
 
-                        token = header_json.get_data('result')['token']
+                        # token = header_json.get_data('result')['token']
                         # amsession = header_json.get_data('AMSESSION')
                         # token = header_json.get_data('LtpaToken2')
                         # content = header_json.get_data('Content-Type')
@@ -113,19 +133,20 @@ class RunTest:
                         # cookies = {
                         #     'apsid':cookie
                         # }
-                        headers = {
-                            'token': token,
-                            "lan": "zh-Hans",
-                            "app_version": "3.0.0",
-                            "uuid": "c61bc941b62843da98ddadb97b3d50bd",
-                            "Content-Type": "application/json;charset=UTF-8"
-                            # 'AMSESSION':amsession,
-                            # 'LtpaToken2':token,
-                            # 'Content-Type':content
-                        }
+
+                        # 登录特殊处理..
+                        # if url.find('login') > 0:
+                        #     res = self.run_method.run_main(method, url, request_data, get_header())
+                        # el
+                        # 默认为application/json，如果不为空，则视为是application/x-www-form-urlencoded
+                        if content_type:
+                            new_headers = get_header()
+                            new_headers['content-type'] = content_type
+                            res = self.run_method.run_main(method, url, request_data, new_headers)
+                        else:
+                            res = self.run_method.run_main_json(method, url, request_data, get_header())
 
                         # res = self.run_method.run_main(method,url,request_data,cookies)
-                        res = self.run_method.run_main(method, url, request_data, headers)
                         # print(json.dumps(response.json(), ensure_ascii=False, sort_keys=True, indent=2))
                         # print(res) 先注释掉
                     else:
@@ -147,7 +168,10 @@ class RunTest:
                     #         print('actual result type is: %s' % type(res))
                     #         print('fail test.......')
                     # assert_equals(response.status_code, 200, "测试失败...")
-                    assert_equals(json.loads(res)['state'], 1, "测试失败...")
+                    result_response = json.loads(res)
+                    assert_equals(result_response['state'], 1, "测试失败...")
+                    # 保存响应结果
+                    set_response(case_id, result_response)
             except Exception:
                 print('TEST CASE [ %s ] failed...' % i)
                 traceback.print_exc()
@@ -155,15 +179,12 @@ class RunTest:
             finally:
                 print("--------- TEST CASE [ %s ] END ---------\n" % i)
 
-
-
-
         print("fail test case: %s" % fail_count)
         # print(pass_count)
         # print(fail_count)
 
-    #将执行判断封装
-    #def get_cookie_run(self,header):
+    # 将执行判断封装
+    # def get_cookie_run(self,header):
 
 
 if __name__ == '__main__':

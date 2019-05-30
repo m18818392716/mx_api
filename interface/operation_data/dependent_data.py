@@ -15,6 +15,8 @@ from jsonpath_rw import jsonpath,parse
 
 from interface.tools.operation_header import OperationHeader
 from interface.tools.operation_json import OperetionJson
+from interface.dataconfig.request_config import *
+from interface.case.case_response import *
 
 class DependdentData:
 
@@ -27,8 +29,8 @@ class DependdentData:
 
         self.run_method = RunMethod()
         # self.headers = {"AMSESSION": "ukdata5", "Region": "uk", "Content-Type": "application/json;charset=UTF-8"}
-        self.headers = {"token": "0e19cc44aabf42a7bb9fa29df751b872", "lan": "zh-Hans", "app_version": "3.0.0",
-                        "uuid": "c61bc941b62843da98ddadb97b3d50bd", "Content-Type": "application/x-www-form-urlencoded; charset=utf-8"}
+        # self.headers = {"token": "0e19cc44aabf42a7bb9fa29df751b872", "lan": "zh-Hans", "app_version": "3.0.0",
+        #                 "uuid": "c61bc941b62843da98ddadb97b3d50bd", "Content-Type": "application/x-www-form-urlencoded; charset=utf-8"}
 
 
     #通过case_id去获取该case_id的整行数据
@@ -40,9 +42,13 @@ class DependdentData:
     def run_dependent(self,case_name):
 
         # run_method = RunMethod()
-        print('yilai: %s' % case_name)
+        print('依赖case: %s' % case_name)
         row_num  = self.opera_excel.get_row_num(case_name)
-        print('hangshu: %s' % row_num)
+        print('行数: %s' % row_num)
+        case_id = self.data.get_case_id(row_num)
+        # 如果已保存过dependent的数据，直接返回
+        if get_response(case_id):
+            return get_response(case_id)
 
         request_data = {}
         if (self.data.get_data_for_json(row_num) is not None):
@@ -74,20 +80,26 @@ class DependdentData:
             for i, v in enumerate(depend_key):
                 request_data[v] = depend_response_data[i]
 
+        res = None
         if header == 'write':
-            res = self.run_method.run_main(method, url, request_data, self.headers)
+            res = self.run_method.run_main(method, url, request_data, get_header())
             # print(json.dumps(response.json(), ensure_ascii=False, sort_keys=True, indent=2))
-            print(res)
+            # print(res)
+
+            uuid = json.loads(res)['result']['uuid']
+            token = json.loads(res)['result']['token']
+            set_header('uuid', uuid)
+            set_header('token', token)
             # op_header = OperationHeader(res)
-            op_header = OperationHeader()
+            # op_header = OperationHeader()
             # op_header.write_cookie()
-            op_header.write_header()
+            # op_header.write_header()
 
         elif header == 'yes':
-            op_json = OperetionJson('../dataconfig/cookie.json')
-            header_json = OperetionJson('../dataconfig/header.json')
+            # op_json = OperetionJson('../dataconfig/cookie.json')
+            # header_json = OperetionJson('../dataconfig/header.json')
 
-            token = header_json.get_data('result')['token']
+            # token = header_json.get_data('result')['token']
             # amsession = header_json.get_data('AMSESSION')
             # token = header_json.get_data('LtpaToken2')
             # content = header_json.get_data('Content-Type')
@@ -95,19 +107,25 @@ class DependdentData:
             # cookies = {
             #     'apsid':cookie
             # }
-            headers = {
-                'token': token,
-                "lan": "zh-Hans",
-                "app_version": "3.0.0",
-                "uuid": "c61bc941b62843da98ddadb97b3d50bd",
-                "Content-Type": "application/json;charset=UTF-8"
-                # 'AMSESSION': amsession,
-                # 'LtpaToken2': token,
-                # 'Content-Type': content
-            }
+            # headers = {
+            #     'token': token,
+            #     "lan": "zh-Hans",
+            #     "app_version": "3.0.0",
+            #     "uuid": "c61bc941b62843da98ddadb97b3d50bd",
+            #     "Content-Type": "application/json;charset=UTF-8"
+            #     # 'AMSESSION': amsession,
+            #     # 'LtpaToken2': token,
+            #     # 'Content-Type': content
+            # }
 
+            # 默认为application/json，如果不为空，则视为是application/x-www-form-urlencoded
+            if content_type:
+                new_headers = get_header()
+                new_headers['content-type'] = content_type
+                res = self.run_method.run_main(method, url, request_data, new_headers)
+            else:
+                res = self.run_method.run_main_json(method, url, request_data, get_header())
             # res = self.run_method.run_main(method,url,request_data,cookies)
-            res = self.run_method.run_main(method, url, request_data, headers)
             # print(json.dumps(response.json(), ensure_ascii=False, sort_keys=True, indent=2))
             # print(res) 先注释掉
         else:
@@ -115,15 +133,12 @@ class DependdentData:
             # print(json.dumps(response.json(), ensure_ascii=False, sort_keys=True, indent=2))
             # print(res) 先注释掉
 
-
-
-
-
-
-
+        # 保存响应结果
+        result_response = json.loads(res)
+        set_response(case_id, result_response)
 
         # res = run_method.run_main(method,url,request_data)
-        return json.loads(res)
+        return result_response
 
     #根据依赖的key去获取执行依赖测试case的响应,然后返回
     def get_data_for_key(self,row):
@@ -171,38 +186,29 @@ class DependdentData:
         list_value = []
 
         for k in str_data:
-            print('haha')
             depend_response_key_data = response_data
 
             key = k.split('.')
 
             for i in key:
 
-                print("-------------------------------------------------------------------")
-                print("字段名：%s" %i)
+                key_name = i
+                index = None
+                if i.find('[') > 0:
+                    start = i.find('[')
+                    key_name = i[0: start]
+                    end = i.find(']')
+                    index = i[(start + 1): end]
+                depend_response_key_data = depend_response_key_data[key_name]
 
                 if isinstance(depend_response_key_data, list):
 
-                    list2 = []
-                    for j, v in enumerate(depend_response_key_data):
-                        print(j, v)
-                        if v.find('[') > 0:
-                            start = v.find('[')
-                            end = v.find(']')
-                            key = v[0: start]
-                            index = v[(start + 1): end]
-                            list2.append(depend_response_key_data[index][i])
-                        else:
-                            list2.append(depend_response_key_data[j][i])
-
-                    depend_response_key_data = list2
-                else:
-                    depend_response_key_data = depend_response_key_data[i]
-
-                print("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++")
-                print(depend_response_key_data)
+                    # 如果包含'[]'索引符，则获取索引对应的元素；否则获取整个集合
+                    if index is not None:
+                        depend_response_key_data = depend_response_key_data[int(index)]
 
             # return depend_response_key_data
+            # print("已获取：[%s : %s]" % (k,depend_response_key_data))
             list_value.append(depend_response_key_data)
 
         return list_value
