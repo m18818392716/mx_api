@@ -134,11 +134,6 @@ class RunTest:
                         #     'apsid':cookie
                         # }
 
-                        # 登录特殊处理..
-                        # if url.find('login') > 0:
-                        #     res = self.run_method.run_main(method, url, request_data, get_header())
-                        # el
-                        # 默认为application/json，如果不为空，则视为是application/x-www-form-urlencoded
                         if content_type:
                             new_headers = get_header()
                             new_headers['content-type'] = content_type
@@ -156,7 +151,7 @@ class RunTest:
 
                     # if expect != None:
                     #     if self.com_util.is_equal_dict(expect, res) == True:
-                    #         # self.data.write_result(i,'pass')
+                    #         self.data.write_result(i,'pass')
                     #         pass_count.append(i)
                     #         print('expect result type is: %s' % type(expect))
                     #         print('actual result type is: %s' % type(res))
@@ -168,14 +163,18 @@ class RunTest:
                     #         print('actual result type is: %s' % type(res))
                     #         print('fail test.......')
                     # assert_equals(response.status_code, 200, "测试失败...")
+
                     result_response = json.loads(res)
                     assert_equals(result_response['state'], 1, "测试失败...")
                     # 保存响应结果
                     set_response(case_id, result_response)
+                    self.data.write_result(i, 'pass')
+
             except Exception:
                 print('TEST CASE [ %s ] failed...' % i)
                 traceback.print_exc()
                 fail_count.append(i)
+                self.data.write_result(i, 'failed')
             finally:
                 print("--------- TEST CASE [ %s ] END ---------\n" % i)
 

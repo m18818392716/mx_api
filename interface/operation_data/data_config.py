@@ -13,14 +13,15 @@ class global_var:
     url = '2'
     run = '3'
     request_way = '4'
-    header = '5'
-    case_depend = '6'
-    data_depend = '7'
-    field_depend = '8'
-    data = '9'
-    expect = '10'
-    result = '11'
-    content_type = '12'
+    content_type = '5'
+    header = '6'
+    case_depend = '7'
+    data_depend = '8'
+    field_depend = '9'
+    data = '10'
+    expect = '11'
+    actual= '12'
+    result = '13'
 #获取caseid
 def get_id():
     return global_var.Id

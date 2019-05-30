@@ -6,6 +6,7 @@
 # @Software: PyCharm
 
 import xlrd
+import xlwt
 from xlutils.copy import copy
 
 class OperationExcel:
@@ -39,10 +40,16 @@ class OperationExcel:
         写入excel数据
         row,col,value
         '''
+        style = "font: color-index red,bold on"
+        red_style = xlwt.easyxf(style)
+
         read_data = xlrd.open_workbook(self.file_name)
         write_data = copy(read_data)
         sheet_data = write_data.get_sheet(0)
-        sheet_data.write(row,col,value)
+        if value == 'pass':
+            sheet_data.write(row,col,value)
+        else:
+            sheet_data.write(row, col, value,red_style)
         write_data.save(self.file_name)
 
     #根据对应的caseid 找到对应行的内容
