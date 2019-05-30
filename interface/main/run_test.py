@@ -135,7 +135,7 @@ class RunTest:
 
                     # if expect != None:
                     #     if self.com_util.is_equal_dict(expect, res) == True:
-                    #         # self.data.write_result(i,'pass')
+                    #         self.data.write_result(i,'pass')
                     #         pass_count.append(i)
                     #         print('expect result type is: %s' % type(expect))
                     #         print('actual result type is: %s' % type(res))
@@ -147,11 +147,13 @@ class RunTest:
                     #         print('actual result type is: %s' % type(res))
                     #         print('fail test.......')
                     # assert_equals(response.status_code, 200, "测试失败...")
+                    self.data.write_result(i, 'pass')
                     assert_equals(json.loads(res)['state'], 1, "测试失败...")
             except Exception:
                 print('TEST CASE [ %s ] failed...' % i)
                 traceback.print_exc()
                 fail_count.append(i)
+                self.data.write_result(i, 'failed')
             finally:
                 print("--------- TEST CASE [ %s ] END ---------\n" % i)
 
