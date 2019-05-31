@@ -6,15 +6,19 @@
 # @Software: PyCharm
 
 import requests
+from interface.dataconfig.request_config import *
 
 # 解决提示'InsecureRequestWarning: Unverified HTTPS request is being made. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#ssl-warnings'
 import urllib3
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
-
 import json
+
 class RunMethod:
     # 处理application/x-www-form-urlencoded; charset=utf-8的请求
     def post_main(self, url, data, header=None):
+        if url.startswith('/'):
+            url = '%s%s' % (get_host(), url)
+
         print('请求参数：%s' % data)
         print('请求头：%s' % header)
         res = None
@@ -34,6 +38,8 @@ class RunMethod:
             return res.json()
 
     def get_main(self, url, data=None, header=None):
+        if url.startswith('/'):
+            url = '%s%s' % (get_host(), url)
         print('请求参数：%s' % data)
         print('请求头：%s' % header)
         res = None
@@ -67,6 +73,8 @@ class RunMethod:
 
     # 处理application/json的请求
     def post_main_json(self, url, data, header=None):
+        if url.startswith('/'):
+            url = '%s%s' % (get_host(), url)
 
         print('请求参数：%s' % data)
         print('请求header：%s' % header)
@@ -102,6 +110,8 @@ class RunMethod:
 
 
     def post_request(self, url, data, header=None):
+        if url.startswith('/'):
+            url = '%s%s' % (get_host(), url)
         res = None
         if header !=None:
             # res = requests.post(url=url, data=data, headers=header, verify=False)
@@ -115,6 +125,8 @@ class RunMethod:
             return res
 
     def get_request(self, url, data=None, header=None):
+        if url.startswith('/'):
+            url = '%s%s' % (get_host(), url)
         res = None
         if header !=None:
             res = requests.get(url=url, params=data, headers=header, verify=False)
