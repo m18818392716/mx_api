@@ -18,29 +18,33 @@ class RunTest:
 
     # 程序执行的
     def go_on_run(self):
+        run_case = []
         pass_count = []
         fail_count = []
         # 10  0,1,2,3
         rows_count = self.data.get_case_lines()
         print('rows_count: %d' % rows_count)
         for row in range(1, rows_count):
-            print("--------- TEST CASE [ %s ] START ---------" % row)
-            try:
-                is_run = self.data.get_is_run(row)
-                if is_run:
+            is_run = self.data.get_is_run(row)
+            if is_run:
+                run_case.append(row)
+                try:
+                    print("--------- TEST CASE [ %s ] START ---------" % row)
                     run_case_by_row_num(row)
                     self.data.write_result(row, 'pass')
                     pass_count.append(row)
-            except Exception:
-                print('TEST CASE [ %s ] failed...' % row)
-                traceback.print_exc()
-                fail_count.append(row)
-                self.data.write_result(row, 'failed')
-            finally:
-                print("--------- TEST CASE [ %s ] END ---------\n" % row)
+                except Exception:
+                    print('TEST CASE [ %s ] failed...' % row)
+                    traceback.print_exc()
+                    fail_count.append(row)
+                    self.data.write_result(row, 'failed')
+                finally:
+                    print("--------- TEST CASE [ %s ] END ---------\n" % row)
 
-        print("fail test case: %s" % fail_count)
-        print("pass test case: %s" % pass_count)
+        print("Run test case: %s" % run_case)
+        print("Fail test case: %s" % fail_count)
+        print("Pass test case: %s" % pass_count)
+
 
 if __name__ == '__main__':
     run = RunTest()
