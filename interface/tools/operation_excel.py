@@ -6,8 +6,8 @@
 # @Software: PyCharm
 
 import xlrd
-import xlwt
-from xlutils.copy import copy
+# import xlwt
+# from xlutils.copy import copy
 
 from openpyxl import load_workbook
 from openpyxl.styles import Font, colors
@@ -63,7 +63,7 @@ class OperationExcel:
         # openpyxl中行与列的索引是从1开始！
         result_cell = sheet_data.cell(row + 1, col + 1, value)
         if value == 'failed':
-            result_cell.font = Font(color=colors.RED, bold=True)
+            result_cell.font = Font('Arial', color=colors.RED, bold=True)
         wb.save(self.file_name)  # 保存替换
 
     # 根据对应的caseid 找到对应行的内容
