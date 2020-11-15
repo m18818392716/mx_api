@@ -17,7 +17,7 @@ def get_data():
 
 
 def data_insert(camera_text):
-    db = pymysql.connect("localhost", "root", "123456789", "testDjango2")
+    db = pymysql.connect("localhost", "root", "123456", "testDjango2")
     # db.clear('camera')
     cursor = db.cursor()
     # print(type(camera_text))

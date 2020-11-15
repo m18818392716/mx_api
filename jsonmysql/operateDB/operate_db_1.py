@@ -16,15 +16,15 @@ conn = pymysql.connect(
     host='localhost',  # mysql服务器地址
     port=3306,  # 端口号
     user='root',  # 用户名
-    passwd='123456789',  # 密码
+    passwd='123456',  # 密码
     db='testDjango2',  # 数据库名称
     charset='utf8',  # 连接编码，根据需要填写
 )
 cur = conn.cursor()  # 创建并返回游标
 
 # 根据文件内容创建表头
-sql_1 = "CREATE TABLE jingweidu (prov  VARCHAR(32),log  VARCHAR(100),lat VARCHAR(100),city VARCHAR(100),clog VARCHAR(100),clat VARCHAR(100));"
-#cur.execute(sql_1)#执行上述sql命令，首次运行时，需要执行上面的语句，用于创建table
+sql_1 = "CREATE TABLE geographic (prov  VARCHAR(32),log  VARCHAR(100),lat VARCHAR(100),city VARCHAR(100),clog VARCHAR(100),clat VARCHAR(100));"
+# cur.execute(sql_1)#执行上述sql命令，首次运行时，需要执行上面的语句，用于创建table
 
 a = open("../jsonFiles/alldata.json", "r",encoding='UTF-8')
 out = a.read()
@@ -49,11 +49,11 @@ while i < x:
         F = [M['children'][k]['name'],M['children'][k]['log'],M['children'][k]['lat']]
         H = E + F
         print(H[0])
-        sql_2 = "insert into jingweidu (prov,log,lat,city,clog,clat) values (" + "'"+H[0]+"'" +","+ "'"+H[1]+"'" + ","+"'"+H[2]+"'" + ","+"'"+H[3]+"'" + ","+"'"+H[4]+"'" + ","+"'"+H[5]+"'" + ");"
+        sql_2 = "insert into geographic (prov,log,lat,city,clog,clat) values (" + "'"+H[0]+"'" +","+ "'"+H[1]+"'" + ","+"'"+H[2]+"'" + ","+"'"+H[3]+"'" + ","+"'"+H[4]+"'" + ","+"'"+H[5]+"'" + ");"
         print(sql_2)
-        # cur.execute(sql_2)  # 执行上述sql命令
+        cur.execute(sql_2)  # 执行上述sql命令
         k = k + 1
-        # conn.commit()
+        conn.commit()
 
     print("============")
     i = i+1
