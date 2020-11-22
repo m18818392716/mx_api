@@ -1,0 +1,527 @@
+1606047866195	geckodriver	INFO	Listening on 127.0.0.1:63776
+1606047869206	mozrunner::runner	INFO	Running command: "D:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "G:\\Temp\\rust_mozprofileuiK3No"
+1606047869778	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1606047869778	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1606047869778	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1606047869778	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+WARN: compileToBinary(259): 
+C:\fakepath(334,18-133): warning X3571: pow(f, e) will not work for negative f, use abs(f) or conditionally handle negative values if you expect them
+C:\fakepath(340,62-116): warning X3571: pow(f, e) will not work for negative f, use abs(f) or conditionally handle negative values if you expect them
+C:\fakepath(363,75-84): warning X3556: integer divides may be much slower, try using uints if possible.
+C:\fakepath(366,50-59): warning X3556: integer modulus may be much slower, try using uints if possible.
+C:\fakepath(382,33-90): warning X3571: pow(f, e) will not work for negative f, use abs(f) or conditionally handle negative values if you expect them
+C:\fakepath(172,1-6): warning X4000: use of potentially uninitialized variable (dyn_index_vec4_float4)
+C:\fakepath(287,25-29): error X4576: Input array signature parameter  cannot be indexed dynamically.
+
+WARN: compileToBinary(259): 
+C:\fakepath(334,18-133): warning X3571: pow(f, e) will not work for negative f, use abs(f) or conditionally handle negative values if you expect them
+C:\fakepath(340,62-116): warning X3571: pow(f, e) will not work for negative f, use abs(f) or conditionally handle negative values if you expect them
+C:\fakepath(363,75-84): warning X3556: integer divides may be much slower, try using uints if possible.
+C:\fakepath(366,50-59): warning X3556: integer modulus may be much slower, try using uints if possible.
+C:\fakepath(382,33-90): warning X3571: pow(f, e) will not work for negative f, use abs(f) or conditionally handle negative values if you expect them
+C:\fakepath(172,1-6): warning X4000: use of potentially uninitialized variable (dyn_index_vec4_float4)
+C:\fakepath(287,25-29): error X4576: Input array signature parameter  cannot be indexed dynamically.
+
+WARN: compileToBinary(259): 
+C:\fakepath(363,75-84): warning X3556: integer divides may be much slower, try using uints if possible.
+C:\fakepath(366,50-59): warning X3556: integer modulus may be much slower, try using uints if possible.
+C:\fakepath(172,1-6): warning X4000: use of potentially uninitialized variable (dyn_index_vec4_float4)
+C:\fakepath(223,1): warning X4000: use of potentially uninitialized variable (f_distance_aa)
+C:\fakepath(260,1): warning X4000: use of potentially uninitialized variable (f_do_clip)
+
+1606047872182	Marionette	INFO	Listening on port 63786
+1606047872425	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: http://%(server)s/dummy/blocklist//buckets/monitor/collections/changes/records?_expected=%221606031929744%22 is not a valid URL..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:201:13
+
+JavaScript warning: https://q.qunarzz.com/flight_qzz/prd/domestic_oneway_new@2f1e6cd39ad055025d51.js, line 1: unreachable code after return statement
+JavaScript warning: https://q.qunarzz.com/flight_qzz/prd/domestic_oneway_new@2f1e6cd39ad055025d51.js, line 1: unreachable code after return statement
+JavaScript warning: https://q.qunarzz.com/flight_qzz/prd/domestic_oneway_new@2f1e6cd39ad055025d51.js, line 1: unreachable code after return statement
+JavaScript warning: https://q.qunarzz.com/flight_qzz/prd/domestic_oneway_new@2f1e6cd39ad055025d51.js, line 1: unreachable code after return statement
+JavaScript warning: https://q.qunarzz.com/flight_qzz/prd/domestic_oneway_new@2f1e6cd39ad055025d51.js, line 1: unreachable code after return statement
+JavaScript warning: https://q.qunarzz.com/flight_qzz/prd/domestic_oneway_new@2f1e6cd39ad055025d51.js, line 1: unreachable code after return statement
+JavaScript warning: https://q.qunarzz.com/flight_qzz/prd/domestic_oneway_new@2f1e6cd39ad055025d51.js, line 1: unreachable code after return statement
+JavaScript warning: https://q.qunarzz.com/flight_qzz/prd/domestic_oneway_new@2f1e6cd39ad055025d51.js, line 1: unreachable code after return statement
+JavaScript warning: https://q.qunarzz.com/flight_qzz/prd/domestic_oneway_new@2f1e6cd39ad055025d51.js, line 1: unreachable code after return statement
+JavaScript warning: https://q.qunarzz.com/flight_qzz/prd/domestic_oneway_new@2f1e6cd39ad055025d51.js, line 1: unreachable code after return statement
+JavaScript warning: https://q.qunarzz.com/flight_qzz/prd/domestic_oneway_new@2f1e6cd39ad055025d51.js, line 1: unreachable code after return statement
+JavaScript warning: https://q.qunarzz.com/flight_qzz/prd/domestic_oneway_new@2f1e6cd39ad055025d51.js, line 1: unreachable code after return statement
+JavaScript warning: https://q.qunarzz.com/flight_qzz/prd/domestic_oneway_new@2f1e6cd39ad055025d51.js, line 1: unreachable code after return statement
+JavaScript warning: https://q.qunarzz.com/flight_qzz/prd/domestic_oneway_new@2f1e6cd39ad055025d51.js, line 1: unreachable code after return statement
+JavaScript warning: https://q.qunarzz.com/flight_qzz/prd/domestic_oneway_new@2f1e6cd39ad055025d51.js, line 1: unreachable code after return statement
+JavaScript warning: https://q.qunarzz.com/flight_qzz/prd/domestic_oneway_new@2f1e6cd39ad055025d51.js, line 1: unreachable code after return statement
+JavaScript warning: https://q.qunarzz.com/flight_qzz/prd/domestic_oneway_new@2f1e6cd39ad055025d51.js, line 1: unreachable code after return statement
+JavaScript warning: https://q.qunarzz.com/flight_qzz/prd/domestic_oneway_new@2f1e6cd39ad055025d51.js, line 1: unreachable code after return statement
+JavaScript warning: https://q.qunarzz.com/flight_qzz/prd/domestic_oneway_new@2f1e6cd39ad055025d51.js, line 1: unreachable code after return statement
+JavaScript warning: https://q.qunarzz.com/flight_qzz/prd/domestic_oneway_new@2f1e6cd39ad055025d51.js, line 1: unreachable code after return statement
+JavaScript warning: https://q.qunarzz.com/flight_qzz/prd/domestic_oneway_new@2f1e6cd39ad055025d51.js, line 1: unreachable code after return statement
+JavaScript warning: https://q.qunarzz.com/flight_qzz/prd/domestic_oneway_new@2f1e6cd39ad055025d51.js, line 1: unreachable code after return statement
+JavaScript warning: https://q.qunarzz.com/flight_qzz/prd/domestic_oneway_new@2f1e6cd39ad0550[Parent 17316, Gecko_IOThread] WARNING: pipe error: 109: file z:/task_1562361253/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Chi[Parent 17316, Gecko_IOThread] WARNING: pipe error: 109: file z:/task_1562361253/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 19532, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1562361253/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 19532, Chr1606048011677	Marionette	INFO	Stopped listening on port 63946
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+[GPU 7724, Chrome_ChildThr
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+51.js, line 1: unreachable code after return statement
+JavaScript warning: https://q.qunarzz.com/flight_qzz/prd/domestic_oneway_new@2f1e6cd39ad055025d51.js, line 1: unreachable code after return statement
+JavaScript warning: https://q.qunarzz.com/flight_qzz/prd/domestic_oneway_new@2f1e6cd39ad055025d51.js, line 1: unreachable code after return statement
+JavaScript warning: https://q.qunarzz.com/flight_qzz/prd/domestic_oneway_new@2f1e6cd39ad055025d51.js, line 1: unreachable code after return statement
+JavaScript warning: https://q.qunarzz.com/flight_qzz/prd/domestic_oneway_new@2f1e6cd39ad055025d51.js, line 1: unreachable code after return statement
+JavaScript warning: https://q.qunarzz.com/flight_qzz/prd/domestic_oneway_new@2f1e6cd39ad055025d51.js, line 1: unreachable code after return statement
+JavaScript warning: https://q.qunarzz.com/flight_qzz/prd/domestic_oneway_new@2f1e6cd39ad055025d51.js, line 1: unreachable code after return statement
+JavaScript warning: https://q.qunarzz.com/flight_qzz/prd/domestic_oneway_new@2f1e6cd39ad055025d51.js, line 1: unreachable code after return statement
+JavaScript warning: https://q.qunarzz.com/flight_qzz/prd/domestic_oneway_new@2f1e6cd39ad055025d51.js, line 1: unreachable code after return statement
+JavaScript warning: https://q.qunarzz.com/flight_qzz/prd/domestic_oneway_new@2f1e6cd39ad055025d51.js, line 1: unreachable code after return statement
+JavaScript warning: https://q.qunarzz.com/flight_qzz/prd/domestic_oneway_new@2f1e6cd39ad055025d51.js, line 1: unreachable code after return statement
+JavaScript warning: https://q.qunarzz.com/flight_qzz/prd/domestic_oneway_new@2f1e6cd39ad055025d51.js, line 1: unreachable code after return statement
+JavaScript warning: https://q.qunarzz.com/flight_qzz/prd/domestic_oneway_new@2f1e6cd39ad055025d51.js, line 1: unreachable code after return statement
+JavaScript warning: https://q.qunarzz.com/flight_qzz/prd/domestic_oneway_new@2f1e6cd39ad055025d51.js, line 1: unreachable code after return statement
+JavaScript warning: https://q.qunarzz.com/flight_qzz/prd/domestic_oneway_new@2f1e6cd39ad055025d51.js, line 1: unreachable code after return statement
+JavaScript warning: https://q.qunarzz.com/flight_qzz/prd/domestic_oneway_new@2f1e6cd39ad055025d51.js, line 1: unreachable code after return statement
+JavaScript warning: https://q.qunarzz.com/flight_qzz/prd/domestic_oneway_new@2f1e6cd39ad055025d51.js, line 1: unreachable code after return statement
+JavaScript warning: https://q.qunarzz.com/flight_qzz/prd/domestic_oneway_new@2f1e6cd39ad055025d51.js, line 1: unreachable code after return statement
+JavaScript warning: https://q.qunarzz.com/flight_qzz/prd/domestic_oneway_new@2f1e6cd39ad055025d51.js, line 1: unreachable code after return statement
+JavaScript warning: https://q.qunarzz.com/flight_qzz/prd/domestic_oneway_new@2f1e6cd39ad055025d51.js, line 1: unreachable code after return statement
+JavaScript warning: https://q.qunarzz.com/flight_qzz/prd/domestic_oneway_new@2f1e6cd39ad055025d51.js, line 1: unreachable code after return statement
+Exiting due to channel error.
+Listening on 127.0.0.1:64077
+1606047987597	mozrunner::runner	INFO	Running command: "D:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "G:\\Temp\\rust_mozprofilerhvnJ1"
+1606047988099	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1606047988100	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1606047988100	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1606047988100	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+WARN: compileToBinary(259): 
+C:\fakepath(334,18-133): warning X3571: pow(f, e) will not work for negative f, use abs(f) or conditionally handle negative values if you expect them
+C:\fakepath(340,62-116): warning X3571: pow(f, e) will not work for negative f, use abs(f) or conditionally handle negative values if you expect them
+C:\fakepath(363,75-84): warning X3556: integer divides may be much slower, try using uints if possible.
+C:\fakepath(366,50-59): warning X3556: integer modulus may be much slower, try using uints if possible.
+C:\fakepath(382,33-90): warning X3571: pow(f, e) will not work for negative f, use abs(f) or conditionally handle negative values if you expect them
+C:\fakepath(172,1-6): warning X4000: use of potentially uninitialized variable (dyn_index_vec4_float4)
+C:\fakepath(287,25-29): error X4576: Input array signature parameter  cannot be indexed dynamically.
+
+WARN: compileToBinary(259): 
+C:\fakepath(334,18-133): warning X3571: pow(f, e) will not work for negative f, use abs(f) or conditionally handle negative values if you expect them
+C:\fakepath(340,62-116): warning X3571: pow(f, e) will not work for negative f, use abs(f) or conditionally handle negative values if you expect them
+C:\fakepath(363,75-84): warning X3556: integer divides may be much slower, try using uints if possible.
+C:\fakepath(366,50-59): warning X3556: integer modulus may be much slower, try using uints if possible.
+C:\fakepath(382,33-90): warning X3571: pow(f, e) will not work for negative f, use abs(f) or conditionally handle negative values if you expect them
+C:\fakepath(172,1-6): warning X4000: use of potentially uninitialized variable (dyn_index_vec4_float4)
+C:\fakepath(287,25-29): error X4576: Input array signature parameter  cannot be indexed dynamically.
+
+WARN: compileToBinary(259): 
+C:\fakepath(363,75-84): warning X3556: integer divides may be much slower, try using uints if possible.
+C:\fakepath(366,50-59): warning X3556: integer modulus may be much slower, try using uints if possible.
+C:\fakepath(172,1-6): warning X4000: use of potentially uninitialized variable (dyn_index_vec4_float4)
+C:\fakepath(223,1): warning X4000: use of potentially uninitialized variable (f_distance_aa)
+C:\fakepath(260,1): warning X4000: use of potentially uninitialized variable (f_do_clip)
+
+1606047991064	Marionette	INFO	Listening on port 64086
+1606047991429	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: http://%(server)s/dummy/blocklist//buckets/monitor/collections/changes/records?_expected=%221606031929744%22 is not a valid URL..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:201:13
+
+[Parent 20356, Gecko_IOThread] WARNING: pipe error: 109: file z:/task_1562361253/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Parent 20356, Gecko_IOThread] WARNING: pipe error: 109: file z:/task_1562361253/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 15396, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1562361253/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 15396, Chrome_ChildThread] WARNING:1606048074148	Marionette	INFO	Stopped listening on port 64086
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+[GPU 13392, Chrome_ChildThread
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+s(f) or conditionally handle negative values if you expect them
+C:\fakepath(363,75-84): warning X3556: integer divides may be much slower, try using uints if possible.
+C:\fakepath(366,50-59): warning X3556: integer modulus may be much slower, try using uints if possible.
+C:\fakepath(382,33-90): warning X3571: pow(f, e) will not work for negative f, use abs(f) or conditionally handle negative values if you expect them
+C:\fakepath(172,1-6): warning X4000: use of potentially uninitialized variable (dyn_index_vec4_float4)
+C:\fakepath(287,25-29): error X4576: Input array signature parameter  cannot be indexed dynamically.
+
+WARN: compileToBinary(259): 
+C:\fakepath(334,18-133): warning X3571: pow(f, e) will not work for negative f, use abs(f) or conditionally handle negative values if you expect them
+C:\fakepath(340,62-116): warning X3571: pow(f, e) will not work for negative f, use abs(f) or conditionally handle negative values if you expect them
+C:\fakepath(363,75-84): warning X3556: integer divides may be much slower, try using uints if possible.
+C:\fakepath(366,50-59): warning X3556: integer modulus may be much slower, try using uints if possible.
+C:\fakepath(382,33-90): warning X3571: pow(f, e) will not work for negative f, use abs(f) or conditionally handle negative values if you expect them
+C:\fakepath(172,1-6): warning X4000: use of potentially uninitialized variable (dyn_index_vec4_float4)
+C:\fakepath(287,25-29): error X4576: Input array signature parameter  cannot be indexed dynamically.
+
+WARN: compileToBinary(259): 
+C:\fakepath(363,75-84): warning X3556: integer divides may be much slower, try using uints if possible.
+C:\fakepath(366,50-59): warning X3556: integer modulus may be much slower, try using uints if possible.
+C:\fakepath(172,1-6): warning X4000: use of potentially uninitialized variable (dyn_index_vec4_float4)
+C:\fakepath(223,1): warning X4000: use of potentially uninitialized variable (f_distance_aa)
+C:\fakepath(260,1): warning X4000: use of potentially uninitialized variable (f_do_clip)
+
+1606048027341	Marionette	INFO	Listening on port 64195
+1606048027809	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Parent 1776, Gecko_IOThread] WARNING: pipe error: 109: file z:/task_1562361253/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 9804, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1562361253/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 9804, Chrome_ChildThread] 1606048072924	Marionette	INFO	Stopped listening on port 64195
+[GPU 20980, Chrom
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1606048080085	geckodriver	INFO	Listening on 127.0.0.1:64287
+1606048083096	mozrunner::runner	INFO	Running command: "D:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "G:\\Temp\\rust_mozprofile8ZcgqF"
+1606048083554	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1606048083554	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1606048083554	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1606048083554	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+WARN: compileToBinary(259): 
+C:\fakepath(334,18-133): warning X3571: pow(f, e) will not work for negative f, use abs(f) or conditionally handle negative values if you expect them
+C:\fakepath(340,62-116): warning X3571: pow(f, e) will not work for negative f, use abs(f) or conditionally handle negative values if you expect them
+C:\fakepath(363,75-84): warning X3556: integer divides may be much slower, try using uints if possible.
+C:\fakepath(366,50-59): warning X3556: integer modulus may be much slower, try using uints if possible.
+C:\fakepath(382,33-90): warning X3571: pow(f, e) will not work for negative f, use abs(f) or conditionally handle negative values if you expect them
+C:\fakepath(172,1-6): warning X4000: use of potentially uninitialized variable (dyn_index_vec4_float4)
+C:\fakepath(287,25-29): error X4576: Input array signature parameter  cannot be indexed dynamically.
+
+WARN: compileToBinary(259): 
+C:\fakepath(334,18-133): warning X3571: pow(f, e) will not work for negative f, use abs(f) or conditionally handle negative values if you expect them
+C:\fakepath(340,62-116): warning X3571: pow(f, e) will not work for negative f, use abs(f) or conditionally handle negative values if you expect them
+C:\fakepath(363,75-84): warning X3556: integer divides may be much slower, try using uints if possible.
+C:\fakepath(366,50-59): warning X3556: integer modulus may be much slower, try using uints if possible.
+C:\fakepath(382,33-90): warning X3571: pow(f, e) will not work for negative f, use abs(f) or conditionally handle negative values if you expect them
+C:\fakepath(172,1-6): warning X4000: use of potentially uninitialized variable (dyn_index_vec4_float4)
+C:\fakepath(287,25-29): error X4576: Input array signature parameter  cannot be indexed dynamically.
+
+WARN: compileToBinary(259): 
+C:\fakepath(363,75-84): warning X3556: integer divides may be much slower, try using uints if possible.
+C:\fakepath(366,50-59): warning X3556: integer modulus may be much slower, try using uints if possible.
+C:\fakepath(172,1-6): warning X4000: use of potentially uninitialized variable (dyn_index_vec4_float4)
+C:\fakepath(223,1): warning X4000: use of potentially uninitialized variable (f_distance_aa)
+C:\fakepath(260,1): warning X4000: use of potentially uninitialized variable (f_do_clip)
+
+1606048086050	Marionette	INFO	Listening on port 64295
+1606048086352	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: http://%(server)s/dummy/blocklist//buckets/monitor/collections/changes/records?_expected=%221606031929744%22 is not a valid URL..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:201:13
+
+[Child 18792, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1562361253/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 18792, Chrome_ChildT[Child 9380, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1562361253/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 9380, [Child 21200, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1562361253/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 21200, Chr1606048210758	Marionette	INFO	Stopped listening on port 64295
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+[GPU 4136, Chrome_ChildThre
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+ally handle negative values if you expect them
+C:\fakepath(363,75-84): warning X3556: integer divides may be much slower, try using uints if possible.
+C:\fakepath(366,50-59): warning X3556: integer modulus may be much slower, try using uints if possible.
+C:\fakepath(382,33-90): warning X3571: pow(f, e) will not work for negative f, use abs(f) or conditionally handle negative values if you expect them
+C:\fakepath(172,1-6): warning X4000: use of potentially uninitialized variable (dyn_index_vec4_float4)
+C:\fakepath(287,25-29): error X4576: Input array signature parameter  cannot be indexed dynamically.
+
+WARN: compileToBinary(259): 
+C:\fakepath(334,18-133): warning X3571: pow(f, e) will not work for negative f, use abs(f) or conditionally handle negative values if you expect them
+C:\fakepath(340,62-116): warning X3571: pow(f, e) will not work for negative f, use abs(f) or conditionally handle negative values if you expect them
+C:\fakepath(363,75-84): warning X3556: integer divides may be much slower, try using uints if possible.
+C:\fakepath(366,50-59): warning X3556: integer modulus may be much slower, try using uints if possible.
+C:\fakepath(382,33-90): warning X3571: pow(f, e) will not work for negative f, use abs(f) or conditionally handle negative values if you expect them
+C:\fakepath(172,1-6): warning X4000: use of potentially uninitialized variable (dyn_index_vec4_float4)
+C:\fakepath(287,25-29): error X4576: Input array signature parameter  cannot be indexed dynamically.
+
+WARN: compileToBinary(259): 
+C:\fakepath(363,75-84): warning X3556: integer divides may be much slower, try using uints if possible.
+C:\fakepath(366,50-59): warning X3556: integer modulus may be much slower, try using uints if possible.
+C:\fakepath(172,1-6): warning X4000: use of potentially uninitialized variable (dyn_index_vec4_float4)
+C:\fakepath(223,1): warning X4000: use of potentially uninitialized variable (f_distance_aa)
+C:\fakepath(260,1): warning X4000: use of potentially uninitialized variable (f_do_clip)
+
+1606048101527	Marionette	INFO	Listening on port 64391
+1606048101602	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: http://%(server)s/dummy/blocklist//buckets/monitor/collections/changes/records?_expected=%221606031929744%22 is not a valid URL..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:201:13
+
+[Child 19644, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1562361253/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 19644, Chrome_ChildThread] WARNI[Child 8320, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1562361253/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 8320, Chrome_ChildThrea1606048209956	Marionette	INFO	Stopped listening on port 64391
+[GPU 14568, Chrome
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+:\fakepath(334,18-133): warning X3571: pow(f, e) will not work for negative f, use abs(f) or conditionally handle negative values if you expect them
+C:\fakepath(340,62-116): warning X3571: pow(f, e) will not work for negative f, use abs(f) or conditionally handle negative values if you expect them
+C:\fakepath(363,75-84): warning X3556: integer divides may be much slower, try using uints if possible.
+C:\fakepath(366,50-59): warning X3556: integer modulus may be much slower, try using uints if possible.
+C:\fakepath(382,33-90): warning X3571: pow(f, e) will not work for negative f, use abs(f) or conditionally handle negative values if you expect them
+C:\fakepath(172,1-6): warning X4000: use of potentially uninitialized variable (dyn_index_vec4_float4)
+C:\fakepath(287,25-29): error X4576: Input array signature parameter  cannot be indexed dynamically.
+
+WARN: compileToBinary(259): 
+C:\fakepath(334,18-133): warning X3571: pow(f, e) will not work for negative f, use abs(f) or conditionally handle negative values if you expect them
+C:\fakepath(340,62-116): warning X3571: pow(f, e) will not work for negative f, use abs(f) or conditionally handle negative values if you expect them
+C:\fakepath(363,75-84): warning X3556: integer divides may be much slower, try using uints if possible.
+C:\fakepath(366,50-59): warning X3556: integer modulus may be much slower, try using uints if possible.
+C:\fakepath(382,33-90): warning X3571: pow(f, e) will not work for negative f, use abs(f) or conditionally handle negative values if you expect them
+C:\fakepath(172,1-6): warning X4000: use of potentially uninitialized variable (dyn_index_vec4_float4)
+C:\fakepath(287,25-29): error X4576: Input array signature parameter  cannot be indexed dynamically.
+
+WARN: compileToBinary(259): 
+C:\fakepath(363,75-84): warning X3556: integer divides may be much slower, try using uints if possible.
+C:\fakepath(366,50-59): warning X3556: integer modulus may be much slower, try using uints if possible.
+C:\fakepath(172,1-6): warning X4000: use of potentially uninitialized variable (dyn_index_vec4_float4)
+C:\fakepath(223,1): warning X4000: use of potentially uninitialized variable (f_distance_aa)
+C:\fakepath(260,1): warning X4000: use of potentially uninitialized variable (f_do_clip)
+
+1606048117717	Marionette	INFO	Listening on port 64482
+1606048118129	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: http://%(server)s/dummy/blocklist//buckets/monitor/collections/changes/records?_expected=%221606031929744%22 is not a valid URL..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:201:13
+
+[Child 15116, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1562361253/build/src/ipc/chromium/src/chrome/common/ipc_channe[Child 19132, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1562361253/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341l
+_win.cc, line 341
+[Child 191[Child 15116, Chrome_ChildThrea[Parent 9092, Gecko_IOThread] WARNING: pipe error: 109: file z:/task_1562361253/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+1606048205657	Marionette	INFO	Stopped listening on port 64482
+[GPU 171
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+negative values if you expect them
+C:\fakepath(340,62-116): warning X3571: pow(f, e) will not work for negative f, use abs(f) or conditionally handle negative values if you expect them
+C:\fakepath(363,75-84): warning X3556: integer divides may be much slower, try using uints if possible.
+C:\fakepath(366,50-59): warning X3556: integer modulus may be much slower, try using uints if possible.
+C:\fakepath(382,33-90): warning X3571: pow(f, e) will not work for negative f, use abs(f) or conditionally handle negative values if you expect them
+C:\fakepath(172,1-6): warning X4000: use of potentially uninitialized variable (dyn_index_vec4_float4)
+C:\fakepath(287,25-29): error X4576: Input array signature parameter  cannot be indexed dynamically.
+
+WARN: compileToBinary(259): 
+C:\fakepath(334,18-133): warning X3571: pow(f, e) will not work for negative f, use abs(f) or conditionally handle negative values if you expect them
+C:\fakepath(340,62-116): warning X3571: pow(f, e) will not work for negative f, use abs(f) or conditionally handle negative values if you expect them
+C:\fakepath(363,75-84): warning X3556: integer divides may be much slower, try using uints if possible.
+C:\fakepath(366,50-59): warning X3556: integer modulus may be much slower, try using uints if possible.
+C:\fakepath(382,33-90): warning X3571: pow(f, e) will not work for negative f, use abs(f) or conditionally handle negative values if you expect them
+C:\fakepath(172,1-6): warning X4000: use of potentially uninitialized variable (dyn_index_vec4_float4)
+C:\fakepath(287,25-29): error X4576: Input array signature parameter  cannot be indexed dynamically.
+
+WARN: compileToBinary(259): 
+C:\fakepath(363,75-84): warning X3556: integer divides may be much slower, try using uints if possible.
+C:\fakepath(366,50-59): warning X3556: integer modulus may be much slower, try using uints if possible.
+C:\fakepath(172,1-6): warning X4000: use of potentially uninitialized variable (dyn_index_vec4_float4)
+C:\fakepath(223,1): warning X4000: use of potentially uninitialized variable (f_distance_aa)
+C:\fakepath(260,1): warning X4000: use of potentially uninitialized variable (f_do_clip)
+
+1606048133128	Marionette	INFO	Listening on port 64570
+1606048133191	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Child 21588, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1562361253/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 21588, Chrome_Chil1606048207837	Marionette	INFO	Stopped listening on port 64570
+[GPU 17612, Chrome
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1606048229813	geckodriver	INFO	Listening on 127.0.0.1:64715
+1606048232823	mozrunner::runner	INFO	Running command: "D:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "G:\\Temp\\rust_mozprofileDyWioB"
+1606048233307	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1606048233308	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1606048233308	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1606048233308	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+WARN: compileToBinary(259): 
+C:\fakepath(334,18-133): warning X3571: pow(f, e) will not work for negative f, use abs(f) or conditionally handle negative values if you expect them
+C:\fakepath(340,62-116): warning X3571: pow(f, e) will not work for negative f, use abs(f) or conditionally handle negative values if you expect them
+C:\fakepath(363,75-84): warning X3556: integer divides may be much slower, try using uints if possible.
+C:\fakepath(366,50-59): warning X3556: integer modulus may be much slower, try using uints if possible.
+C:\fakepath(382,33-90): warning X3571: pow(f, e) will not work for negative f, use abs(f) or conditionally handle negative values if you expect them
+C:\fakepath(172,1-6): warning X4000: use of potentially uninitialized variable (dyn_index_vec4_float4)
+C:\fakepath(287,25-29): error X4576: Input array signature parameter  cannot be indexed dynamically.
+
+WARN: compileToBinary(259): 
+C:\fakepath(334,18-133): warning X3571: pow(f, e) will not work for negative f, use abs(f) or conditionally handle negative values if you expect them
+C:\fakepath(340,62-116): warning X3571: pow(f, e) will not work for negative f, use abs(f) or conditionally handle negative values if you expect them
+C:\fakepath(363,75-84): warning X3556: integer divides may be much slower, try using uints if possible.
+C:\fakepath(366,50-59): warning X3556: integer modulus may be much slower, try using uints if possible.
+C:\fakepath(382,33-90): warning X3571: pow(f, e) will not work for negative f, use abs(f) or conditionally handle negative values if you expect them
+C:\fakepath(172,1-6): warning X4000: use of potentially uninitialized variable (dyn_index_vec4_float4)
+C:\fakepath(287,25-29): error X4576: Input array signature parameter  cannot be indexed dynamically.
+
+WARN: compileToBinary(259): 
+C:\fakepath(363,75-84): warning X3556: integer divides may be much slower, try using uints if possible.
+C:\fakepath(366,50-59): warning X3556: integer modulus may be much slower, try using uints if possible.
+C:\fakepath(172,1-6): warning X4000: use of potentially uninitialized variable (dyn_index_vec4_float4)
+C:\fakepath(223,1): warning X4000: use of potentially uninitialized variable (f_distance_aa)
+C:\fakepath(260,1): warning X4000: use of potentially uninitialized variable (f_do_clip)
+
+1606048235788	Marionette	INFO	Listening on port 64723
+1606048236062	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://q.qunarzz.com/flight_qzz/prd/domestic_oneway_new@2f1e6cd39ad055025d51.js, line 1: unreachable code after return statement
+JavaScript warning: https://q.qunarzz.com/flight_qzz/prd/domestic_oneway_new@2f1e6cd39ad055025d51.js, line 1: unreachable code after return statement
+JavaScript warning: https://q.qunarzz.com/flight_qzz/prd/domestic_oneway_new@2f1e6cd39ad055025d51.js, line 1: unreachable code after return statement
+JavaScript warning: https://q.qunarzz.com/flight_qzz/prd/domestic_oneway_new@2f1e6cd39ad055025d51.js, line 1: unreachable code after return statement
+JavaScript warning: https://q.qunarzz.com/flight_qzz/prd/domestic_oneway_new@2f1e6cd39ad055025d51.js, line 1: unreachable code after return statement
+JavaScript warning: https://q.qunarzz.com/flight_qzz/prd/domestic_oneway_new@2f1e6cd39ad055025d51.js, line 1: unreachable code after return statement
+JavaScript warning: https://q.qunarzz.com/flight_qzz/prd/domestic_oneway_new@2f1e6cd39ad055025d51.js, line 1: unreachable code after return statement
+JavaScript warning: https://q.qunarzz.com/flight_qzz/prd/domestic_oneway_new@2f1e6cd39ad055025d51.js, line 1: unreachable code after return statement
+JavaScript warning: https://q.qunarzz.com/flight_qzz/prd/domestic_oneway_new@2f1e6cd39ad055025d51.js, line 1: unreachable code after return statement
+JavaScript warning: https://q.qunarzz.com/flight_qzz/prd/domestic_oneway_new@2f1e6cd39ad055025d51.js, line 1: unreachable code after return statement
+JavaScript warning: https://q.qunarzz.com/flight_qzz/prd/domestic_oneway_new@2f1e6cd39ad055025d51.js, line 1: unreachable code after return statement
+JavaScript warning: https://q.qunarzz.com/flight_qzz/prd/domestic_oneway_new@2f1e6cd39ad055025d51.js, line 1: unreachable code after return statement
+JavaScript warning: https://q.qunarzz.com/flight_qzz/prd/domestic_oneway_new@2f1e6cd39ad055025d51.js, line 1: unreachable code after return statement
+JavaScript warning: https://q.qunarzz.com/flight_qzz/prd/domestic_oneway_new@2f1e6cd39ad055025d51.js, line 1: unreachable code after return statement
+JavaScript warning: https://q.qunarzz.com/flight_qzz/prd/domestic_oneway_new@2f1e6cd39ad055025d51.js, line 1: unreachable code after return statement
+JavaScript warning: https://q.qunarzz.com/flight_qzz/prd/domestic_oneway_new@2f1e6cd39ad055025d51.js, line 1: unreachable code after return statement
+JavaScript warning: https://q.qunarzz.com/flight_qzz/prd/domestic_oneway_new@2f1e6cd39ad055025d51.js, line 1: unreachable code after return statement
+JavaScript warning: https://q.qunarzz.com/flight_qzz/prd/domestic_oneway_new@2f1e6cd39ad055025d51.js, line 1: unreachable code after return statement
+JavaScript warning: https://q.qunarzz.com/flight_qzz/prd/domestic_oneway_new@2f1e6cd39ad055025d51.js, line 1: unreachable code after return statement
+JavaScript warning: https://q.qunarzz.com/flight_qzz/prd/domestic_oneway_new@2f1e6cd39ad055025d51.js, line 1: unreachable code after return statement
+JavaScript warning: https://q.qunarzz.com/flight_qzz/prd/domestic_oneway_new@2f1e6cd39ad055025d51.js, line 1: unreachable code after return statement
+JavaScript warning: https://q.qunarzz.com/flight_qzz/prd/domestic_oneway_new@2f1e6cd39ad055025d51.js, line 1: unreachable code after return statement
+JavaScript warning: https://q.qunarzz.com/flight_qzz/prd/domestic_oneway_new@2f1e6cd39ad055025d51.js, line 1: unreachable code after return statement
+JavaScript warning: https://q.qunarzz.com/flight_qzz/prd/domestic_oneway_new@2f1e6cd39ad055025d51.js, line 1: unreachable code after return statement
+JavaScript warning: https://q.qunarzz.com/flight_qzz/prd/domestic_oneway_new@2f1e6cd39ad055025d51.js, line 1: unreachable code after return statement
+JavaScript warning: https://q.qunarzz.com/flight_qzz/prd/domestic_oneway_new@2f1e6cd39ad055025d51.js, line 1: unreachable code after return statement
+JavaScript warning: https://q.qunarzz.com/flight_qzz/prd/domestic_oneway_new@2f1e6cd39ad055025d51.js, line 1: unreachable code after return statement
+JavaScript warning: https://q.qunarzz.com/flight_qzz/prd/domestic_oneway_new@2f1e6cd39ad055025d51.js, line 1: unreachable code after return statement
+JavaScript warning: https://q.qunarzz.com/flight_qzz/prd/domestic_oneway_new@2f1e6cd39ad055025d51.js, line 1: unreachable code after return statement
+JavaScript warning: https://q.qunarzz.com/flight_qzz/prd/domestic_oneway_new@2f1e6cd39ad055025d51.js, line 1: unreachable code after return statement
+JavaScript warning: https://q.qunarzz.com/flight_qzz/prd/domestic_oneway_new@2f1e6cd39ad055025d51.js, line 1: unreachable code after return statement
+JavaScript warning: https://q.qunarzz.com/flight_qzz/prd/domestic_oneway_new@2f1e6cd39ad055025d51.js, line 1: unreachable code after return statement
+JavaScript warning: https://q.qunarzz.com/flight_qzz/prd/domestic_oneway_new@2f1e6cd39ad055025d51.js, line 1: unreachable code after return statement
+JavaScript warning: https://q.qunarzz.com/flight_qzz/prd/domestic_oneway_new@2f1e6cd39ad055025d51.js, line 1: unreachable code after return statement
+JavaScript warning: https://q.qunarzz.com/flight_qzz/prd/domestic_oneway_new@2f1e6cd39ad055025d51.js, line 1: unreachable code after return statement
+JavaScript warning: https://q.qunarzz.com/flight_qzz/prd/domestic_oneway_new@2f1e6cd39ad055025d51.js, line 1: unreachable code after return statement
+JavaScript warning: https://q.qunarzz.com/flight_qzz/prd/domestic_oneway_new@2f1e6cd39ad055025d51.js, line 1: unreachable code after return statement
+JavaScript warning: https://q.qunarzz.com/flight_qzz/prd/domestic_oneway_new@2f1e6cd39ad055025d51.js, line 1: unreachable code after return statement
+JavaScript warning: https://q.qunarzz.com/flight_qzz/prd/domestic_oneway_new@2f1e6cd39ad055025d51.js, line 1: unreachable code after return statement
+JavaScript warning: https://q.qunarzz.com/flight_qzz/prd/domestic_oneway_new@2f1e6cd39ad055025d51.js, line 1: unreachable code after return statement
+JavaScript warning: https://q.qunarzz.com/flight_qzz/prd/domestic_oneway_new@2f1e6cd39ad055025d51.js, line 1: unreachable code after return statement
+JavaScript warning: https://q.qunarzz.com/flight_qzz/prd/domestic_oneway_new@2f1e6cd39ad055025d51.js, line 1: unreachable code after return statement
+JavaScript warning: https://q.qunarzz.com/flight_qzz/prd/domestic_oneway_new@2f1e6cd39ad055025d51.js, line 1: unreachable code after return statement
+JavaScript warning: https://q.qunarzz.com/flight_qzz/prd/domestic_oneway_new@2f1e6cd39ad055025d51.js, line 1: unreachable code after return statement
+JavaScript warning: https://q.qunarzz.com/flight_qzz/prd/domestic_oneway_new@2f1e6cd39ad055025d51.js, line 1: unreachable code after return statement
+JavaScript warning: https://q.qunarzz.com/flight_qzz/prd/domestic_oneway_new@2f1e6cd39ad055025d51.js, line 1: unreachable code after return statement
+JavaScript warning: https://q.qunarzz.com/flight_qzz/prd/domestic_oneway_new@2f1e6cd39ad055025d51.js, line 1: unreachable code after return statement
+JavaScript warning: https://q.qunarzz.com/flight_qzz/prd/domestic_oneway_new@2f1e6cd39ad055025d51.js, line 1: unreachable code after return statement
+[Parent 13016, Gecko_IOThread] WARNING: pipe error: 109: file z:/task_1562361253/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 13632, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1562361253/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 13632, ChrJavaScript error: resource:///modules/sessionstore/SessionStore.jsm, line 1667: TypeError: subject.QueryInterface is not a function
+A content process crashed and MOZ_CRASHREPORTER_SHUTDOWN is set, shutting down
+[Parent 13016, Gecko_IOThread] WARNING: pipe error: 109: file z:/task_1562361253/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+1606048491731	Marionette	INFO	Stopped listening on port 64723
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+[GPU 20412, Chrome_
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1606048492164	geckodriver	INFO	Listening on 127.0.0.1:64927
+1606048495169	mozrunner::runner	INFO	Running command: "D:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "G:\\Temp\\rust_mozprofiletGC75J"
+1606048495728	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1606048495728	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1606048495728	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1606048495728	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1606048502669	geckodriver	INFO	Listening on 127.0.0.1:64949
+1606048505680	mozrunner::runner	INFO	Running command: "D:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "G:\\Temp\\rust_mozprofile5ctoVc"
+1606048506179	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1606048506179	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1606048506179	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1606048506179	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+WARN: compileToBinary(259): 
+C:\fakepath(334,18-133): warning X3571: pow(f, e) will not work for negative f, use abs(f) or conditionally handle negative values if you expect them
+C:\fakepath(340,62-116): warning X3571: pow(f, e) will not work for negative f, use abs(f) or conditionally handle negative values if you expect them
+C:\fakepath(363,75-84): warning X3556: integer divides may be much slower, try using uints if possible.
+C:\fakepath(366,50-59): warning X3556: integer modulus may be much slower, try using uints if possible.
+C:\fakepath(382,33-90): warning X3571: pow(f, e) will not work for negative f, use abs(f) or conditionally handle negative values if you expect them
+C:\fakepath(172,1-6): warning X4000: use of potentially uninitialized variable (dyn_index_vec4_float4)
+C:\fakepath(287,25-29): error X4576: Input array signature parameter  cannot be indexed dynamically.
+
+WARN: compileToBinary(259): 
+C:\fakepath(334,18-133): warning X3571: pow(f, e) will not work for negative f, use abs(f) or conditionally handle negative values if you expect them
+C:\fakepath(340,62-116): warning X3571: pow(f, e) will not work for negative f, use abs(f) or conditionally handle negative values if you expect them
+C:\fakepath(363,75-84): warning X3556: integer divides may be much slower, try using uints if possible.
+C:\fakepath(366,50-59): warning X3556: integer modulus may be much slower, try using uints if possible.
+C:\fakepath(382,33-90): warning X3571: pow(f, e) will not work for negative f, use abs(f) or conditionally handle negative values if you expect them
+C:\fakepath(172,1-6): warning X4000: use of potentially uninitialized variable (dyn_index_vec4_float4)
+C:\fakepath(287,25-29): error X4576: Input array signature parameter  cannot be indexed dynamically.
+
+WARN: compileToBinary(259): 
+C:\fakepath(363,75-84): warning X3556: integer divides may be much slower, try using uints if possible.
+C:\fakepath(366,50-59): warning X3556: integer modulus may be much slower, try using uints if possible.
+C:\fakepath(172,1-6): warning X4000: use of potentially uninitialized variable (dyn_index_vec4_float4)
+C:\fakepath(223,1): warning X4000: use of potentially uninitialized variable (f_distance_aa)
+C:\fakepath(260,1): warning X4000: use of potentially uninitialized variable (f_do_clip)
+
+1606048508802	Marionette	INFO	Listening on port 64958
+1606048508912	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://q.qunarzz.com/flight_qzz/prd/domestic_oneway_new@2f1e6cd39ad055025d51.js, line 1: unreachable code after return statement
+JavaScript warning: https://q.qunarzz.com/flight_qzz/prd/domestic_oneway_new@2f1e6cd39ad055025d51.js, line 1: unreachable code after return statement
+JavaScript warning: https://q.qunarzz.com/flight_qzz/prd/domestic_oneway_new@2f1e6cd39ad055025d51.js, line 1: unreachable code after return statement
+JavaScript warning: https://q.qunarzz.com/flight_qzz/prd/domestic_oneway_new@2f1e6cd39ad055025d51.js, line 1: unreachable code after return statement
+JavaScript warning: https://q.qunarzz.com/flight_qzz/prd/domestic_oneway_new@2f1e6cd39ad055025d51.js, line 1: unreachable code after return statement
+JavaScript warning: https://q.qunarzz.com/flight_qzz/prd/domestic_oneway_new@2f1e6cd39ad055025d51.js, line 1: unreachable code after return statement
+JavaScript warning: https://q.qunarzz.com/flight_qzz/prd/domestic_oneway_new@2f1e6cd39ad055025d51.js, line 1: unreachable code after return statement
+JavaScript warning: https://q.qunarzz.com/flight_qzz/prd/domestic_oneway_new@2f1e6cd39ad055025d51.js, line 1: unreachable code after return statement
+JavaScript warning: https://q.qunarzz.com/flight_qzz/prd/domestic_oneway_new@2f1e6cd39ad055025d51.js, line 1: unreachable code after return statement
+JavaScript warning: https://q.qunarzz.com/flight_qzz/prd/domestic_oneway_new@2f1e6cd39ad055025d51.js, line 1: unreachable code after return statement
+JavaScript warning: https://q.qunarzz.com/flight_qzz/prd/domestic_oneway_new@2f1e6cd39ad055025d51.js, line 1: unreachable code after return statement
+JavaScript warning: https://q.qunarzz.com/flight_qzz/prd/domestic_oneway_new@2f1e6cd39ad055025d51.js, line 1: unreachable code after return statement
+JavaScript warning: https://q.qunarzz.com/flight_qzz/prd/domestic_oneway_new@2f1e6cd39ad055025d51.js, line 1: unreachable code after return statement
+JavaScript warning: https://q.qunarzz.com/flight_qzz/prd/domestic_oneway_new@2f1e6cd39ad055025d51.js, line 1: unreachable code after return statement
+JavaScript warning: https://q.qunarzz.com/flight_qzz/prd/domestic_oneway_new@2f1e6cd39ad055025d51.js, line 1: unreachable code after return statement
+JavaScript warning: https://q.qunarzz.com/flight_qzz/prd/domestic_oneway_new@2f1e6cd39ad055025d51.js, line 1: unreachable code after return statement
+JavaScript warning: https://q.qunarzz.com/flight_qzz/prd/domestic_oneway_new@2f1e6cd39ad055025d51.js, line 1: unreachable code after return statement
+JavaScript warning: https://q.qunarzz.com/flight_qzz/prd/domestic_oneway_new@2f1e6cd39ad055025d51.js, line 1: unreachable code after return statement
+JavaScript warning: https://q.qunarzz.com/flight_qzz/prd/domestic_oneway_new@2f1e6cd39ad055025d51.js, line 1: unreachable code after return statement
+JavaScript warning: https://q.qunarzz.com/flight_qzz/prd/domestic_oneway_new@2f1e6cd39ad055025d51.js, line 1: unreachable code after return statement
+JavaScript warning: https://q.qunarzz.com/flight_qzz/prd/domestic_oneway_new@2f1e6cd39ad055025d51.js, line 1: unreachable code after return statement
+JavaScript warning: https://q.qunarzz.com/flight_qzz/prd/domestic_oneway_new@2f1e6cd39ad055025d51.js, line 1: unreachable code after return statement
+JavaScript warning: https://q.qunarzz.com/flight_qzz/prd/domestic_oneway_new@2f1e6cd39ad055025d51.js, line 1: unreachable code after return statement
+JavaScript warning: https://q.qunarzz.com/flight_qzz/prd/domestic_oneway_new@2f1e6cd39ad055025d51.js, line 1: unreachable code after return statement
+JavaScript warning: https://q.qunarzz.com/flight_qzz/prd/domestic_oneway_new@2f1e6cd39ad055025d51.js, line 1: unreachable code after return statement
+JavaScript warning: https://q.qunarzz.com/flight_qzz/prd/domestic_oneway_new@2f1e6cd39ad055025d51.js, line 1: unreachable code after return statement
+JavaScript warning: https://q.qunarzz.com/flight_qzz/prd/domestic_oneway_new@2f1e6cd39ad055025d51.js, line 1: unreachable code after return statement
+JavaScript warning: https://q.qunarzz.com/flight_qzz/prd/domestic_oneway_new@2f1e6cd39ad055025d51.js, line 1: unreachable code after return statement
+JavaScript warning: https://q.qunarzz.com/flight_qzz/prd/domestic_oneway_new@2f1e6cd39ad055025d51.js, line 1: unreachable code after return statement
+JavaScript warning: https://q.qunarzz.com/flight_qzz/prd/domestic_oneway_new@2f1e6cd39ad055025d51.js, line 1: unreachable code after return statement
+JavaScript warning: https://q.qunarzz.com/flight_qzz/prd/domestic_oneway_new@2f1e6cd39ad055025d51.js, line 1: unreachable code after return statement
+JavaScript warning: https://q.qunarzz.com/flight_qzz/prd/domestic_oneway_new@2f1e6cd39ad055025d51.js, line 1: unreachable code after return statement
+JavaScript warning: https://q.qunarzz.com/flight_qzz/prd/domestic_oneway_new@2f1e6cd39ad055025d51.js, line 1: unreachable code after return statement
+JavaScript warning: https://q.qunarzz.com/flight_qzz/prd/domestic_oneway_new@2f1e6cd39ad055025d51.js, line 1: unreachable code after return statement
+JavaScript warning: https://q.qunarzz.com/flight_qzz/prd/domestic_oneway_new@2f1e6cd39ad055025d51.js, line 1: unreachable code after return statement
+JavaScript warning: https://q.qunarzz.com/flight_qzz/prd/domestic_oneway_new@2f1e6cd39ad055025d51.js, line 1: unreachable code after return statement
+JavaScript warning: https://q.qunarzz.com/flight_qzz/prd/domestic_oneway_new@2f1e6cd39ad055025d51.js, line 1: unreachable code after return statement
+JavaScript warning: https://q.qunarzz.com/flight_qzz/prd/domestic_oneway_new@2f1e6cd39ad055025d51.js, line 1: unreachable code after return statement
+JavaScript warning: https://q.qunarzz.com/flight_qzz/prd/domestic_oneway_new@2f1e6cd39ad055025d51.js, line 1: unreachable code after return statement
+JavaScript warning: https://q.qunarzz.com/flight_qzz/prd/domestic_oneway_new@2f1e6cd39ad055025d51.js, line 1: unreachable code after return statement
+JavaScript warning: https://q.qunarzz.com/flight_qzz/prd/domestic_oneway_new@2f1e6cd39ad055025d51.js, line 1: unreachable code after return statement
+JavaScript warning: https://q.qunarzz.com/flight_qzz/prd/domestic_oneway_new@2f1e6cd39ad055025d51.js, line 1: unreachable code after return statement
+JavaScript warning: https://q.qunarzz.com/flight_qzz/prd/domestic_oneway_new@2f1e6cd39ad055025d51.js, line 1: unreachable code after return statement
+JavaScript warning: https://q.qunarzz.com/flight_qzz/prd/domestic_oneway_new@2f1e6cd39ad055025d51.js, line 1: unreachable code after return statement
+JavaScript warning: https://q.qunarzz.com/flight_qzz/prd/domestic_oneway_new@2f1e6cd39ad055025d51.js, line 1: unreachable code after return statement
+JavaScript warning: https://q.qunarzz.com/flight_qzz/prd/domestic_oneway_new@2f1e6cd39ad055025d51.js, line 1: unreachable code after return statement
+JavaScript warning: https://q.qunarzz.com/flight_qzz/prd/domestic_oneway_new@2f1e6cd39ad055025d51.js, line 1: unreachable code after return statement
+JavaScript warning: https://q.qunarzz.com/flight_qzz/prd/domestic_oneway_new@2f1e6cd39ad055025d51.js, line 1: unreachable code after return statement
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: http://%(server)s/dummy/blocklist//buckets/monitor/collections/changes/records?_expected=%221606031929744%22 is not a valid URL..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:201:13
+
