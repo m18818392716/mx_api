@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 from pandas import DataFrame,Series
-from mpl_toolkits.mplot3d import Axes3D
+from .mplot3d import Axes3D
 
 #1、线型图
 # df = pd.DataFrame(np.random.randn(10, 4), index=pd.date_range('2018/12/18',periods=10), columns=list('ABCD'))
